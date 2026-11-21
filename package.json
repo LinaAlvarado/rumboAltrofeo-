@@ -1,0 +1,30 @@
+{
+  "name": "rumbo-al-trofeo",
+  "version": "1.0.0",
+  "description": "Juego híbrido Rumbo al Trofeo",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "datos": "node scripts/generar-datos.js",
+    "probar": "node scripts/probar-motor.js",
+    "personajes": "node scripts/recortar-personajes.js",
+    "imagenes": "node scripts/generar-imagenes.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "@fontsource/lilita-one": "^5.3.0",
+    "@fontsource/nunito": "^5.3.0",
+    "express": "^5.3.0",
+    "qrcode": "^1.5.4",
+    "socket.io": "^4.8.4",
+    "xlsx": "^0.18.5"
+  },
+  "devDependencies": {
+    "puppeteer-core": "^25.18.1",
+    "sharp": "^0.35.5",
+    "socket.io-client": "^4.8.4"
+  }
+}

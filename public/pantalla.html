@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rumbo al Trofeo · Pantalla</title>
+<link rel="icon" href="/img/icono.svg">
+<link rel="stylesheet" href="/comun.css">
+<link rel="stylesheet" href="/pantalla.css">
+</head>
+<body>
+<div id="marco">
+  <div id="escenario">
+    <header id="barra">
+      <div class="logo arcade">RUMBO AL <span>TROFEO</span> <span class="emoji">🏆</span></div>
+      <div id="turno-pill"></div>
+      <div id="barra-der"></div>
+    </header>
+    <div id="tablero">
+      <svg id="caminos-svg" width="1920" height="1080"></svg>
+      <div id="casillas"></div>
+      <div id="trofeo"><div class="trofeo-brillo"></div><div class="trofeo-circulo"><div class="trofeo-icono flotar"></div><div class="trofeo-txt">TROFEO</div></div></div>
+      <div id="fichas"></div>
+    </div>
+    <aside id="equipos"></aside>
+    <aside id="leyenda"></aside>
+    <div id="capa"></div>
+    <div id="dado-capa"></div>
+  </div>
+</div>
+<div id="activar" class="activar">
+  <div class="panel">
+    <div class="arcade" style="font-size:48px">RUMBO AL TROFEO</div>
+    <p>Haz clic para activar el sonido y la pantalla completa</p>
+    <button class="btn verde grande">¡Listo!</button>
+  </div>
+</div>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/comun.js"></script>
+<script src="/pantalla.js"></script>
+</body>
+</html>

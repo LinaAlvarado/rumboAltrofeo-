@@ -1,0 +1,42 @@
+[
+  {
+    "archivo": "p01.png",
+    "nombre": "Caballero"
+  },
+  {
+    "archivo": "p02.png",
+    "nombre": "Arquero"
+  },
+  {
+    "archivo": "p03.png",
+    "nombre": "Guerrera"
+  },
+  {
+    "archivo": "p04.png",
+    "nombre": "Clérigo"
+  },
+  {
+    "archivo": "p05.png",
+    "nombre": "Sombra"
+  },
+  {
+    "archivo": "p06.png",
+    "nombre": "Bárbara"
+  },
+  {
+    "archivo": "p07.png",
+    "nombre": "Samurái"
+  },
+  {
+    "archivo": "p08.png",
+    "nombre": "Druida"
+  },
+  {
+    "archivo": "p09.png",
+    "nombre": "Pirata"
+  },
+  {
+    "archivo": "p10.png",
+    "nombre": "Inventora"
+  }
+]

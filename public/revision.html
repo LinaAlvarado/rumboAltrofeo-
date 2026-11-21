@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Revisión de contenido</title>
+<link rel="icon" href="/img/icono.svg">
+<style>
+@font-face { font-family: 'Lilita'; src: url('/fonts/lilita.woff2') format('woff2'); font-display: swap; }
+@font-face { font-family: 'Nunito'; src: url('/fonts/nunito-600.woff2') format('woff2'); font-weight: 600; font-display: swap; }
+@font-face { font-family: 'Nunito'; src: url('/fonts/nunito-800.woff2') format('woff2'); font-weight: 800; font-display: swap; }
+:root {
+  --fondo: #f6f3fc; --papel: #ffffff; --tinta: #23164a; --tinta2: #5d5280; --linea: #e3dcf3;
+  --morado: #5b2fc9; --rojo: #d6304a; --rojo-f: #fdecef; --amar: #a36a00; --amar-f: #fff5dc;
+  --verde: #1e8a47; --verde-f: #e6f6ec; --nar: #c25a12; --nar-f: #fff0e4;
+}
+* { box-sizing: border-box; }
+html, body { margin: 0; }
+body { background: var(--fondo); color: var(--tinta); font: 600 16px/1.45 'Nunito', 'Segoe UI', system-ui, sans-serif; }
+h1, h2, h3 { font-family: 'Lilita', 'Trebuchet MS', sans-serif; font-weight: 400; margin: 0; letter-spacing: .3px; }
+b, strong { font-weight: 800; }
+.envoltura { max-width: 1100px; margin: 0 auto; padding: 24px 16px 80px; }
+.oculto { display: none !important; }
+
+/* Encabezado */
+header.top { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 12px; margin-bottom: 20px; }
+header.top h1 { font-size: 34px; color: var(--morado); }
+header.top p { margin: 2px 0 0; color: var(--tinta2); }
+.btn { appearance: none; border: 2px solid var(--morado); background: var(--papel); color: var(--morado); font: 800 15px 'Nunito', sans-serif; padding: 8px 14px; border-radius: 10px; cursor: pointer; }
+.btn.lleno { background: var(--morado); color: #fff; }
+
+/* PIN */
+#login { max-width: 360px; margin: 12vh auto; background: var(--papel); border: 1px solid var(--linea); border-radius: 16px; padding: 24px; display: grid; gap: 12px; }
+#login input { font: 800 22px 'Nunito', sans-serif; padding: 10px 12px; border: 2px solid var(--linea); border-radius: 10px; letter-spacing: 4px; }
+.error { color: var(--rojo); }
+
+/* Resumen */
+.cifras { display: grid; grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); gap: 10px; margin-bottom: 22px; }
+.cifra { background: var(--papel); border: 1px solid var(--linea); border-radius: 14px; padding: 12px 14px; cursor: pointer; text-align: left; font: inherit; color: inherit; }
+.cifra b { display: block; font: 400 30px 'Lilita', sans-serif; }
+.cifra.falta b { color: var(--rojo); } .cifra.revisar b { color: var(--amar); } .cifra.material b { color: var(--nar); } .cifra.lista b { color: var(--verde); }
+
+section.bloque { background: var(--papel); border: 1px solid var(--linea); border-radius: 16px; padding: 18px 20px; margin-bottom: 16px; }
+section.bloque > h2 { font-size: 24px; margin-bottom: 4px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+section.bloque > .sub { color: var(--tinta2); margin: 0 0 12px; }
+.marca { font: 800 12px 'Nunito', sans-serif; text-transform: uppercase; letter-spacing: .6px; padding: 3px 9px; border-radius: 999px; }
+.marca.falta { background: var(--rojo-f); color: var(--rojo); }
+.marca.revisar { background: var(--amar-f); color: var(--amar); }
+.marca.material { background: var(--nar-f); color: var(--nar); }
+.marca.lista { background: var(--verde-f); color: var(--verde); }
+.borde-falta { border-left: 6px solid var(--rojo) !important; }
+.borde-revisar { border-left: 6px solid #e0a419 !important; }
+.borde-material { border-left: 6px solid #e8813a !important; }
+
+.tabla-scroll { overflow-x: auto; }
+.formato { width: 100%; min-width: 640px; border-collapse: collapse; font-size: 14px; margin: 8px 0 12px; }
+.formato th, .formato td { border: 1px solid var(--linea); padding: 6px 8px; text-align: left; vertical-align: top; }
+.formato th { background: #f1ecfb; }
+.chips { display: flex; flex-wrap: wrap; gap: 6px; }
+.chip { display: inline-flex; align-items: center; gap: 5px; background: #f1ecfb; border-radius: 999px; padding: 2px 10px; font-size: 14px; }
+.chip.ok { background: var(--verde-f); color: var(--verde); font-weight: 800; }
+.chip.trampa { background: var(--rojo-f); color: var(--rojo); }
+.chip.link { cursor: pointer; border: 0; font: inherit; color: inherit; }
+.chip.link:hover { background: #e2d8f7; }
+
+/* Materiales */
+.mats { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 8px; }
+.mat { display: grid; grid-template-columns: 26px 1fr; gap: 4px 8px; align-items: start; align-content: start; padding: 8px 10px; border: 1px solid var(--linea); border-radius: 10px; cursor: pointer; }
+.mat input { width: 20px; height: 20px; margin: 2px 0 0; accent-color: var(--verde); }
+.mat small { grid-column: 2; color: var(--tinta2); }
+.mat.hecho { background: var(--verde-f); border-color: #bfe6cd; }
+.mat.hecho .nom { text-decoration: line-through; color: var(--tinta2); }
+.mat .tag { font-size: 11px; font-weight: 800; text-transform: uppercase; color: var(--nar); margin-left: 6px; }
+.mat.extra { border-color: #f3c3a0; background: var(--nar-f); }
+
+/* Dibujos */
+.dibujos { display: flex; flex-wrap: wrap; gap: 12px; }
+.dibujos figure { margin: 0; width: 150px; text-align: center; font-size: 14px; }
+.dibujos img { width: 150px; height: 112px; object-fit: contain; background: #fff; border: 1px solid var(--linea); border-radius: 10px; }
+
+/* Filtros */
+.filtros { position: sticky; top: 0; z-index: 5; background: var(--fondo); padding: 10px 0; display: grid; gap: 8px; }
+.filtros input[type=search] { width: 100%; font: 700 16px 'Nunito', sans-serif; padding: 10px 14px; border: 2px solid var(--linea); border-radius: 12px; background: var(--papel); }
+.fila-filtros { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.f { appearance: none; border: 1.5px solid var(--linea); background: var(--papel); color: var(--tinta); font: 800 14px 'Nunito', sans-serif; padding: 5px 11px; border-radius: 999px; cursor: pointer; display: inline-flex; align-items: center; gap: 6px; }
+.f.on { background: var(--tinta); color: #fff; border-color: var(--tinta); }
+.f .pt { width: 10px; height: 10px; border-radius: 50%; background: var(--c); }
+.cuenta { color: var(--tinta2); font-size: 14px; margin-left: auto; }
+
+/* Cartas */
+h2.grupo { font-size: 26px; margin: 26px 0 10px; display: flex; align-items: center; gap: 10px; }
+h2.grupo .ic { width: 38px; height: 38px; border-radius: 50%; display: grid; place-items: center; background: var(--c); color: #fff; }
+details.carta { background: var(--papel); border: 1px solid var(--linea); border-radius: 14px; margin-bottom: 8px; scroll-margin-top: 140px; }
+details.carta[open] { box-shadow: 0 4px 18px rgba(60, 30, 140, .08); }
+details.carta > summary { list-style: none; cursor: pointer; padding: 12px 16px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 10px; }
+details.carta > summary::-webkit-details-marker { display: none; }
+summary .id { font: 800 13px 'Nunito', sans-serif; color: var(--tinta2); min-width: 40px; }
+summary .nom { font: 400 19px 'Lilita', sans-serif; }
+summary .tipo { font: 800 12px 'Nunito', sans-serif; color: #fff; background: var(--c); padding: 2px 9px; border-radius: 999px; }
+summary .modo { color: var(--tinta2); font-size: 14px; }
+summary .der { margin-left: auto; display: flex; gap: 6px; flex-wrap: wrap; }
+.cuerpo { padding: 0 16px 16px; display: grid; gap: 12px; }
+.cuerpo .txt { margin: 0; }
+.datos { display: flex; flex-wrap: wrap; gap: 6px 16px; font-size: 14px; color: var(--tinta2); }
+.datos b { color: var(--tinta); }
+.aviso { border-radius: 10px; padding: 10px 12px; font-size: 15px; }
+.aviso.falta { background: var(--rojo-f); color: #7d1426; }
+.aviso.revisar { background: var(--amar-f); color: #6b4500; }
+.aviso.material { background: var(--nar-f); color: #7a3606; }
+.aviso.info { background: #f1ecfb; color: var(--tinta); }
+.banco h4 { margin: 0 0 6px; font: 800 13px 'Nunito', sans-serif; text-transform: uppercase; letter-spacing: .6px; color: var(--tinta2); }
+.banco ol { margin: 0; padding-left: 24px; display: grid; gap: 8px; }
+.banco li::marker { color: var(--tinta2); font-weight: 800; }
+.item-ppal { font-weight: 800; }
+.item-ppal .emo { font-size: 22px; margin-right: 6px; }
+.item-sec { font-size: 14px; color: var(--tinta2); margin-top: 3px; display: flex; flex-wrap: wrap; gap: 4px 8px; align-items: center; }
+.item-img { width: 110px; height: 82px; object-fit: contain; border: 1px solid var(--linea); border-radius: 8px; background: #fff; display: block; margin-top: 4px; }
+.vacio { text-align: center; color: var(--tinta2); padding: 30px; }
+
+@media (max-width: 600px) {
+  header.top h1 { font-size: 26px; }
+  section.bloque { padding: 14px; }
+  summary .der { margin-left: 0; width: 100%; }
+  .mats { grid-template-columns: 1fr; }
+}
+@media print {
+  body { background: #fff; }
+  .filtros, .btn, header.top .acciones { display: none !important; }
+  details.carta, section.bloque { break-inside: avoid; box-shadow: none !important; }
+}
+</style>
+</head>
+<body>
+<form id="login" class="oculto">
+  <h1 style="color:var(--morado)">Revisión de contenido</h1>
+  <label for="pin">PIN del moderador</label>
+  <input id="pin" type="password" inputmode="numeric" autocomplete="off" autofocus>
+  <div id="pin-error" class="error oculto">PIN incorrecto</div>
+  <button class="btn lleno" type="submit">Entrar</button>
+</form>
+<div class="envoltura oculto" id="app"></div>
+<script src="/comun.js"></script>
+<script src="/revision.js"></script>
+</body>
+</html>

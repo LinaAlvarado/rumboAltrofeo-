@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rumbo al Trofeo · Moderador</title>
+<link rel="icon" href="/img/icono.svg">
+<link rel="stylesheet" href="/comun.css">
+<link rel="stylesheet" href="/moderador.css">
+</head>
+<body>
+<div id="login" class="login oculto">
+  <form class="panel" id="form-pin">
+    <div class="arcade" style="font-size:34px">Panel del moderador</div>
+    <label for="pin">PIN</label>
+    <input id="pin" type="password" inputmode="numeric" autocomplete="off" autofocus>
+    <div id="pin-error" class="error oculto">PIN incorrecto</div>
+    <button class="btn verde grande" type="submit">Entrar</button>
+  </form>
+</div>
+<header id="top"></header>
+<div id="cuerpo">
+  <section id="principal"></section>
+  <aside id="lateral"></aside>
+</div>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/comun.js"></script>
+<script src="/moderador.js"></script>
+</body>
+</html>

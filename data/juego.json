@@ -1,0 +1,4457 @@
+{
+  "tablero": {
+    "Destreza": [
+      "Reto",
+      "Duelo",
+      "Vacía",
+      "Bonus",
+      "Reto",
+      "Penitencia",
+      "Duelo",
+      "Vacía",
+      "Reto",
+      "Reto final"
+    ],
+    "Mente": [
+      "Duelo",
+      "Reto",
+      "Vacía",
+      "Penitencia",
+      "Reto",
+      "Sorpresa",
+      "Duelo",
+      "Reto",
+      "Vacía",
+      "Reto final"
+    ],
+    "Creativo": [
+      "Reto",
+      "Vacía",
+      "Penitencia",
+      "Duelo",
+      "Bonus",
+      "Reto",
+      "Vacía",
+      "Duelo",
+      "Reto",
+      "Reto final"
+    ],
+    "Música": [
+      "Vacía",
+      "Duelo",
+      "Reto",
+      "Sorpresa",
+      "Reto",
+      "Vacía",
+      "Duelo",
+      "Penitencia",
+      "Reto",
+      "Reto final"
+    ],
+    "Equipo": [
+      "Reto",
+      "Duelo",
+      "Penitencia",
+      "Vacía",
+      "Reto",
+      "Sorpresa",
+      "Duelo",
+      "Vacía",
+      "Reto",
+      "Reto final"
+    ]
+  },
+  "caminos": [
+    {
+      "nombre": "Destreza",
+      "tema": "Retos físicos y de habilidad"
+    },
+    {
+      "nombre": "Mente",
+      "tema": "Trivia y acertijos (celular)"
+    },
+    {
+      "nombre": "Creativo",
+      "tema": "Mímica, dibujo y actuación"
+    },
+    {
+      "nombre": "Música",
+      "tema": "Canciones de la playlist PV canciones"
+    },
+    {
+      "nombre": "Equipo",
+      "tema": "Cooperación, juegan todos"
+    }
+  ],
+  "cartas": [
+    {
+      "id": "DE01",
+      "camino": "Destreza",
+      "tipo": "Reto",
+      "nombre": "Torre de cartas",
+      "instrucciones": "En pantalla aparece la imagen de una casa de cartas. Con las cartas que les entrega el moderador, el equipo debe construirla igual. Imagen de referencia",
+      "comoSeGana": "Si la torre queda en pie igual a la imagen al terminar el tiempo.",
+      "tiempo": 60,
+      "material": "Mazo de cartas de juego",
+      "seJuegaEn": "Pantalla y presencial",
+      "modo": "presencial",
+      "banco": "DE01",
+      "mostrarEnPantalla": true
+    },
+    {
+      "id": "DE02",
+      "camino": "Destreza",
+      "tipo": "Reto",
+      "nombre": "Globo y villano",
+      "instrucciones": "Cada integrante mantiene un globo en el aire. El programa elige al azar a otro equipo como villano, y ese equipo escoge entre ellos a una persona. El villano usa un palito para intentar tumbar los globos al piso. Cada globo que toca el piso cuenta 1, lo recogen y siguen.",
+      "comoSeGana": "Si al terminar el tiempo no han tocado el piso 5 globos.",
+      "tiempo": 45,
+      "material": "1 globo por integrante, 1 palito",
+      "seJuegaEn": "Pantalla y presencial",
+      "modo": "presencial",
+      "villano": true
+    },
+    {
+      "id": "DE03",
+      "camino": "Destreza",
+      "tipo": "Reto",
+      "nombre": "Puntería",
+      "instrucciones": "Desde 2 metros, lancen bolitas hacia un vaso. Cada integrante lanza por turnos.",
+      "comoSeGana": "Si meten 3 bolitas antes de que acabe el tiempo.",
+      "tiempo": 45,
+      "material": "5 bolitas, 1 vaso",
+      "seJuegaEn": "Presencial",
+      "modo": "presencial"
+    },
+    {
+      "id": "DE04",
+      "camino": "Destreza",
+      "tipo": "Reto",
+      "nombre": "Globos y vasos",
+      "instrucciones": "El equipo se pone en fila, uno detrás del otro. Se pasan el vaso especial con el globo: cada integrante infla el globo dentro del vaso, lo pasa al siguiente y lo desinfla.",
+      "comoSeGana": "Si el vaso llega al último integrante a tiempo.",
+      "tiempo": 65,
+      "material": "1 vaso especial (dos vasos pegados con dos huecos), globos",
+      "seJuegaEn": "Presencial",
+      "modo": "presencial"
+    },
+    {
+      "id": "DE05",
+      "camino": "Destreza",
+      "tipo": "Reto",
+      "nombre": "Búsqueda del tesoro",
+      "instrucciones": "En pantalla salen 5 letras al azar (entre A, B, C, D, E, L, M, P, R, S, T, V). El equipo busca en el salón un objeto que empiece por cada letra.",
+      "comoSeGana": "Si traen los 5 objetos a tiempo.",
+      "tiempo": 120,
+      "material": null,
+      "seJuegaEn": "Pantalla y presencial",
+      "modo": "secuencia_pantalla",
+      "banco": "DE05",
+      "secuencia": {
+        "tipo": "letras",
+        "cantidad": 5,
+        "juntas": true
+      }
+    },
+    {
+      "id": "DE06",
+      "camino": "Destreza",
+      "tipo": "Reto",
+      "nombre": "Camino de hojas",
+      "instrucciones": "Cada integrante recibe una hoja. Deben llevar una bolita de un punto A a un punto B usando solo las hojas, sin tocarla con las manos. Ellos deciden la estrategia. Si la bolita se cae, empiezan otra vez.",
+      "comoSeGana": "Si la bolita llega al punto B a tiempo.",
+      "tiempo": 90,
+      "material": "1 bolita, 1 hoja por integrante",
+      "seJuegaEn": "Presencial",
+      "modo": "presencial"
+    },
+    {
+      "id": "DE07",
+      "camino": "Destreza",
+      "tipo": "Reto",
+      "nombre": "Globo soplado en relevo",
+      "instrucciones": "En relevo, cada integrante lleva el globo un tramo moviéndolo solo con soplidos y se lo entrega al siguiente.",
+      "comoSeGana": "Si el globo llega a la meta a tiempo sin que nadie lo toque.",
+      "tiempo": 60,
+      "material": "1 globo",
+      "seJuegaEn": "Presencial",
+      "modo": "presencial"
+    },
+    {
+      "id": "DE08",
+      "camino": "Destreza",
+      "tipo": "Reto",
+      "nombre": "Atrapa con bolsa",
+      "instrucciones": "Cada uno de los otros equipos manda un lanzador. Los lanzadores tiran bolas desde 2 metros y cada integrante del equipo debe atraparlas con su bolsa, sin usar las manos.",
+      "comoSeGana": "Si atrapan 5 bolas a tiempo.",
+      "tiempo": 60,
+      "material": "Bolas, 1 bolsa por integrante",
+      "seJuegaEn": "Presencial",
+      "modo": "presencial"
+    },
+    {
+      "id": "DE09",
+      "camino": "Destreza",
+      "tipo": "Duelo",
+      "nombre": "Círculo del globo",
+      "instrucciones": "El equipo que cae en la casilla elige contra qué equipo se enfrenta. Cada equipo se pone en círculo, agarrados de las manos, y lleva un globo de un punto A a un punto B usando cabezas, brazos y manos unidas. Si el globo cae al piso, vuelven al inicio.",
+      "comoSeGana": "El primer equipo en llegar al punto B. Sin límite de tiempo.",
+      "tiempo": null,
+      "material": "2 globos",
+      "seJuegaEn": "Celular y presencial",
+      "modo": "presencial"
+    },
+    {
+      "id": "DE10",
+      "camino": "Destreza",
+      "tipo": "Duelo",
+      "nombre": "Sopla la bolita",
+      "instrucciones": "Cada equipo empuja bolitas soplando por la mesa hasta meterlas en una bolsa al otro extremo. Cada integrante da un soplido, por turnos. Cuando meten una, sigue la siguiente.",
+      "comoSeGana": "El equipo que meta más bolitas en la bolsa en 1 minuto.",
+      "tiempo": 60,
+      "material": "Bolitas (varias por equipo), 2 bolsas, 1 mesa",
+      "seJuegaEn": "Presencial",
+      "modo": "presencial"
+    },
+    {
+      "id": "DE11",
+      "camino": "Destreza",
+      "tipo": "Duelo",
+      "nombre": "Vaso en la cabeza",
+      "instrucciones": "Relevo: cada integrante camina un tramo con un vaso (con una bolita adentro) sobre la cabeza y se lo pasa al siguiente. Si se cae, ese integrante repite su tramo.",
+      "comoSeGana": "El primer equipo en terminar el relevo. Sin límite de tiempo.",
+      "tiempo": null,
+      "material": "2 vasos, 2 bolitas",
+      "seJuegaEn": "Presencial",
+      "modo": "presencial"
+    },
+    {
+      "id": "DE12",
+      "camino": "Destreza",
+      "tipo": "Duelo",
+      "nombre": "Cesta móvil",
+      "instrucciones": "Cada equipo pone a un integrante como cesta del equipo contrario: sostiene una bolsa abierta y se mueve dentro de una zona marcada para hacerlo difícil. Los demás lanzan bolas desde una línea a la cesta del rival.",
+      "comoSeGana": "El equipo que meta más bolas en el tiempo.",
+      "tiempo": 60,
+      "material": "Bolas, 2 bolsas",
+      "seJuegaEn": "Presencial",
+      "modo": "presencial"
+    },
+    {
+      "id": "DE13",
+      "camino": "Destreza",
+      "tipo": "Duelo",
+      "nombre": "Duelo matemático",
+      "instrucciones": "En pantalla aparece una operación (ej.: 3 x 4 - 5). Cada equipo la resuelve en grupo y escribe la respuesta en su celular. Luego en pantalla se ve qué respondió cada equipo. Se juegan 3 rondas.",
+      "comoSeGana": "Gana cada ronda el equipo que responda bien más rápido. Gana el duelo el que gane 2 de 3 (lo valida el programa).",
+      "tiempo": 60,
+      "material": null,
+      "seJuegaEn": "Pantalla y celular",
+      "modo": "escribir",
+      "generador": "operacion",
+      "rango": [
+        5,
+        50
+      ],
+      "numero": true,
+      "rondas": 3
+    },
+    {
+      "id": "DE14",
+      "camino": "Destreza",
+      "tipo": "Duelo",
+      "nombre": "Copia la pose",
+      "instrucciones": "Se juegan 3 poses. En pantalla aparece por 10 segundos la foto de un grupo de personas en una pose. Luego desaparece y ambos equipos la imitan de memoria con sus cuerpos. Participan todos los integrantes.",
+      "comoSeGana": "El equipo que copie mejor más poses (decide el moderador).",
+      "tiempo": 30,
+      "material": null,
+      "seJuegaEn": "Pantalla y presencial",
+      "modo": "secuencia_pantalla",
+      "banco": "DE14",
+      "secuencia": {
+        "tipo": "poses",
+        "cantidad": 3,
+        "duracion": 10
+      }
+    },
+    {
+      "id": "DE15",
+      "camino": "Destreza",
+      "tipo": "Reto final",
+      "nombre": "Todos contra uno",
+      "instrucciones": "El equipo mantiene 3 globos en el aire. Cada uno de los otros equipos manda un villano que intenta tumbar los globos al piso con las manos, sin empujar a nadie.",
+      "comoSeGana": "Si al terminar el tiempo no han caído 3 globos al piso.",
+      "tiempo": 45,
+      "material": "3 globos",
+      "seJuegaEn": "Presencial",
+      "modo": "presencial"
+    },
+    {
+      "id": "DE16",
+      "camino": "Destreza",
+      "tipo": "Reto final",
+      "nombre": "Campo minado",
+      "instrucciones": "En el piso se arma un camino lleno de vasos regados. Por turnos, cada integrante cruza con los ojos cerrados mientras su equipo lo guía solo con la voz.",
+      "comoSeGana": "Si todos cruzan a tiempo y entre todos tumban máximo 3 vasos.",
+      "tiempo": 120,
+      "material": "15 vasos",
+      "seJuegaEn": "Presencial",
+      "modo": "presencial"
+    },
+    {
+      "id": "DE17",
+      "camino": "Destreza",
+      "tipo": "Reto final",
+      "nombre": "Aro sin soltarse",
+      "instrucciones": "El equipo hace un círculo agarrado de las manos, con un aro colgado entre dos personas. Deben pasar el aro por el cuerpo de todos sin soltarse las manos.",
+      "comoSeGana": "Si el aro da 2 vueltas completas al círculo a tiempo.",
+      "tiempo": 60,
+      "material": "1 aro (tipo ula ula)",
+      "seJuegaEn": "Presencial",
+      "modo": "presencial"
+    },
+    {
+      "id": "DE18",
+      "camino": "Destreza",
+      "tipo": "Reto final",
+      "nombre": "Simón dice relámpago",
+      "instrucciones": "La pantalla lanza 10 órdenes rápidas, una por una: el moderador decide cuándo sale cada una (ej.: ¡Manos arriba!, ¡Toquen algo azul!, ¡Todos agachados!, ¡Abrazo de grupo!). Todo el equipo debe hacerlas. Algunas son trampa porque no empiezan con \"Simón dice\": esas no se hacen.",
+      "comoSeGana": "Si todo el equipo aguanta las 10 órdenes sin equivocarse. Si alguien falla una, pierden.",
+      "tiempo": 20,
+      "material": null,
+      "seJuegaEn": "Pantalla y presencial",
+      "modo": "secuencia_pantalla",
+      "banco": "DE18",
+      "secuencia": {
+        "tipo": "simon",
+        "cantidad": 10,
+        "intervalo": 2,
+        "manual": true
+      }
+    },
+    {
+      "id": "M01",
+      "camino": "Mente",
+      "tipo": "Reto",
+      "nombre": "Trivia rápida",
+      "instrucciones": "Respondan 3 preguntas bíblicas en el celular.",
+      "comoSeGana": "Si aciertan 2 de 3.",
+      "tiempo": 60,
+      "material": null,
+      "seJuegaEn": "Celular",
+      "modo": "opcion_multiple",
+      "banco": "M01",
+      "cantidad": 3,
+      "minimo": 2
+    },
+    {
+      "id": "M02",
+      "camino": "Mente",
+      "tipo": "Reto",
+      "nombre": "Acertijo bíblico",
+      "instrucciones": "El moderador lee en voz alta un acertijo bíblico.",
+      "comoSeGana": "Si lo resuelven a tiempo.",
+      "tiempo": 45,
+      "material": null,
+      "seJuegaEn": "Presencial",
+      "modo": "presencial",
+      "banco": "M02",
+      "panel": true
+    },
+    {
+      "id": "M03",
+      "camino": "Mente",
+      "tipo": "Reto",
+      "nombre": "Sopa de letras bíblica",
+      "instrucciones": "En el celular aparece una sopa de letras con 8 palabras bíblicas. El equipo las busca en grupo.",
+      "comoSeGana": "Si encuentran 6 de 8.",
+      "tiempo": 90,
+      "material": null,
+      "seJuegaEn": "Celular",
+      "modo": "sopa_letras",
+      "banco": "M03",
+      "minimo": 6
+    },
+    {
+      "id": "M04",
+      "camino": "Mente",
+      "tipo": "Reto",
+      "nombre": "Anagrama bíblico",
+      "instrucciones": "Descifren 3 palabras bíblicas con las letras desordenadas (ej.: SOMIES es MOISES).",
+      "comoSeGana": "Si descifran 2 de 3.",
+      "tiempo": 60,
+      "material": null,
+      "seJuegaEn": "Celular",
+      "modo": "escribir",
+      "banco": "M04",
+      "cantidad": 3,
+      "minimo": 2
+    },
+    {
+      "id": "M05",
+      "camino": "Mente",
+      "tipo": "Reto",
+      "nombre": "Verdadero o falso bíblico",
+      "instrucciones": "Cinco afirmaciones bíblicas en el celular. Marquen si son verdaderas o falsas.",
+      "comoSeGana": "Si aciertan 4 de 5.",
+      "tiempo": 45,
+      "material": null,
+      "seJuegaEn": "Celular",
+      "modo": "opcion_multiple",
+      "banco": "M05",
+      "cantidad": 5,
+      "minimo": 4
+    },
+    {
+      "id": "M06",
+      "camino": "Mente",
+      "tipo": "Reto",
+      "nombre": "¿Qué falta?",
+      "instrucciones": "En pantalla se muestran 10 objetos bíblicos por 15 segundos. Luego desaparece uno.",
+      "comoSeGana": "Si adivinan cuál falta.",
+      "tiempo": 30,
+      "material": null,
+      "seJuegaEn": "Pantalla",
+      "modo": "secuencia_pantalla",
+      "banco": "M06",
+      "secuencia": {
+        "tipo": "que_falta",
+        "cantidad": 10,
+        "duracion": 15
+      }
+    },
+    {
+      "id": "M07",
+      "camino": "Mente",
+      "tipo": "Reto",
+      "nombre": "Versículo incompleto",
+      "instrucciones": "En el celular aparece un versículo al que le faltan 2 o 3 palabras. El equipo las elige de un banco de palabras.",
+      "comoSeGana": "Si completan todas las palabras bien.",
+      "tiempo": 60,
+      "material": null,
+      "seJuegaEn": "Celular",
+      "modo": "opcion_multiple",
+      "banco": "M07",
+      "cantidad": 1,
+      "completar": true,
+      "esperarSenal": true,
+      "queAparece": "el versículo"
+    },
+    {
+      "id": "M08",
+      "camino": "Mente",
+      "tipo": "Reto",
+      "nombre": "Adivina quién",
+      "instrucciones": "El moderador lee, una por una, pistas de un personaje bíblico.",
+      "comoSeGana": "Si adivinan con 3 pistas o menos.",
+      "tiempo": 45,
+      "material": null,
+      "seJuegaEn": "Presencial",
+      "modo": "presencial",
+      "banco": "M08",
+      "panel": true
+    },
+    {
+      "id": "M09",
+      "camino": "Mente",
+      "tipo": "Duelo",
+      "nombre": "Pregunta relámpago",
+      "instrucciones": "Ambos equipos responden la misma pregunta bíblica en su celular.",
+      "comoSeGana": "El primero que responda bien.",
+      "tiempo": 20,
+      "material": null,
+      "seJuegaEn": "Celular",
+      "modo": "opcion_multiple",
+      "banco": "M09",
+      "cantidad": 1,
+      "esperarSenal": true,
+      "queAparece": "la pregunta"
+    },
+    {
+      "id": "M10",
+      "camino": "Mente",
+      "tipo": "Duelo",
+      "nombre": "Historia en emojis",
+      "instrucciones": "Ambos equipos ven en el celular unos emojis que representan una historia bíblica y eligen entre 4 opciones.",
+      "comoSeGana": "El primero que responda bien.",
+      "tiempo": 30,
+      "material": null,
+      "seJuegaEn": "Celular",
+      "modo": "opcion_multiple",
+      "banco": "M10",
+      "cantidad": 1
+    },
+    {
+      "id": "M11",
+      "camino": "Mente",
+      "tipo": "Duelo",
+      "nombre": "Cálculo mental",
+      "instrucciones": "Aparece una operación en pantalla (ej.: 7 x 8 - 12).",
+      "comoSeGana": "El primero en responder bien en el celular.",
+      "tiempo": 20,
+      "material": null,
+      "seJuegaEn": "Celular",
+      "modo": "escribir",
+      "generador": "operacion",
+      "rango": [
+        5,
+        50
+      ],
+      "numero": true,
+      "cantidad": 1
+    },
+    {
+      "id": "M12",
+      "camino": "Mente",
+      "tipo": "Duelo",
+      "nombre": "Categorías",
+      "instrucciones": "El moderador dice una categoría (ej.: frutas). Los equipos se turnan para decir una palabra, y cada vez responde un integrante distinto, con 5 segundos.",
+      "comoSeGana": "Pierde el que repita o se quede sin respuesta.",
+      "tiempo": 60,
+      "material": null,
+      "seJuegaEn": "Presencial",
+      "modo": "presencial",
+      "banco": "M12",
+      "panel": true
+    },
+    {
+      "id": "M13",
+      "camino": "Mente",
+      "tipo": "Duelo",
+      "nombre": "Banderas",
+      "instrucciones": "Aparece una bandera en pantalla.",
+      "comoSeGana": "El primero en responder bien en el celular.",
+      "tiempo": 20,
+      "material": null,
+      "seJuegaEn": "Celular",
+      "modo": "opcion_multiple",
+      "banco": "M13",
+      "cantidad": 1,
+      "generador": "banderas"
+    },
+    {
+      "id": "M14",
+      "camino": "Mente",
+      "tipo": "Duelo",
+      "nombre": "Verdadero o falso relámpago",
+      "instrucciones": "Cinco afirmaciones bíblicas seguidas que ambos equipos responden en el celular.",
+      "comoSeGana": "El que acierte más. Si empatan, gana el más rápido.",
+      "tiempo": 45,
+      "material": null,
+      "seJuegaEn": "Celular",
+      "modo": "opcion_multiple",
+      "banco": "M14",
+      "cantidad": 5,
+      "ganaMasAciertos": true
+    },
+    {
+      "id": "M15",
+      "camino": "Mente",
+      "tipo": "Reto final",
+      "nombre": "Trivia de 5",
+      "instrucciones": "Cinco preguntas bíblicas en el celular.",
+      "comoSeGana": "Si aciertan 4 de 5.",
+      "tiempo": 90,
+      "material": null,
+      "seJuegaEn": "Celular",
+      "modo": "opcion_multiple",
+      "banco": "M15",
+      "cantidad": 5,
+      "minimo": 4
+    },
+    {
+      "id": "M16",
+      "camino": "Mente",
+      "tipo": "Reto final",
+      "nombre": "Línea del tiempo bíblica",
+      "instrucciones": "En el celular aparecen 6 eventos bíblicos desordenados. El equipo los ordena del más antiguo al más reciente.",
+      "comoSeGana": "Si el orden es completamente correcto.",
+      "tiempo": 20,
+      "material": null,
+      "seJuegaEn": "Celular",
+      "modo": "ordenar",
+      "banco": "M16"
+    },
+    {
+      "id": "M17",
+      "camino": "Mente",
+      "tipo": "Reto final",
+      "nombre": "Memoria",
+      "instrucciones": "Se muestran 8 palabras bíblicas en pantalla por 20 segundos. Luego escriben en el celular todas las que recuerden.",
+      "comoSeGana": "Si recuerdan al menos 6.",
+      "tiempo": 60,
+      "material": null,
+      "seJuegaEn": "Pantalla y celular",
+      "modo": "escribir",
+      "banco": "M17",
+      "lista": true,
+      "verSegundos": 20,
+      "minimo": 6
+    },
+    {
+      "id": "M18",
+      "camino": "Mente",
+      "tipo": "Reto final",
+      "nombre": "Candado bíblico",
+      "instrucciones": "En pantalla aparece un candado con 3 pistas bíblicas. Cada respuesta es un número. Juntando los 3 números en orden forman la clave, y la escriben en el celular.",
+      "comoSeGana": "Si abren el candado a tiempo. Tienen 2 intentos.",
+      "tiempo": 120,
+      "material": null,
+      "seJuegaEn": "Pantalla y celular",
+      "modo": "escribir",
+      "banco": "M18",
+      "numero": true,
+      "intentos": 2
+    },
+    {
+      "id": "C01",
+      "camino": "Creativo",
+      "tipo": "Reto",
+      "nombre": "Mímica bíblica",
+      "instrucciones": "Los integrantes se turnan: cada uno ve en el celular una profesión o un personaje bíblico y lo actúa sin hablar mientras los demás adivinan.",
+      "comoSeGana": "Si adivinan 3 a tiempo.",
+      "tiempo": 60,
+      "material": null,
+      "seJuegaEn": "Celular y presencial",
+      "modo": "palabra_secreta",
+      "banco": "C01",
+      "cantidad": 3
+    },
+    {
+      "id": "C02",
+      "camino": "Creativo",
+      "tipo": "Reto",
+      "nombre": "Dibujo en el tablero",
+      "instrucciones": "Tres integrantes pasan al tablero y dibujan juntos, sin letras ni números. El moderador les muestra en su vista la palabra bíblica que genera el programa. El resto del equipo adivina.",
+      "comoSeGana": "Si adivinan al menos 2 palabras en 60 segundos.",
+      "tiempo": 60,
+      "material": "Tablero y marcadores",
+      "seJuegaEn": "Moderador y presencial",
+      "modo": "palabra_secreta",
+      "banco": "C02",
+      "cantidad": 3,
+      "enPanel": true
+    },
+    {
+      "id": "C03",
+      "camino": "Creativo",
+      "tipo": "Reto",
+      "nombre": "Escultores",
+      "instrucciones": "Un integrante se aleja del grupo. Los demás ven una palabra bíblica en el celular y la modelan juntos con plastilina. Luego el que se alejó debe adivinar qué es.",
+      "comoSeGana": "Si la adivina a tiempo.",
+      "tiempo": 90,
+      "material": "Plastilina",
+      "seJuegaEn": "Celular y presencial",
+      "modo": "palabra_secreta",
+      "banco": "C03",
+      "cantidad": 1
+    },
+    {
+      "id": "C04",
+      "camino": "Creativo",
+      "tipo": "Reto",
+      "nombre": "Ahorcado bíblico",
+      "instrucciones": "En pantalla aparece un muñeco de palo y las casillas de una palabra o frase bíblica. Los integrantes se turnan para elegir una letra en el celular. Cada letra equivocada dibuja una parte del muñeco. En cualquier momento pueden intentar decir la respuesta completa.",
+      "comoSeGana": "Si adivinan la palabra antes de que el muñeco quede completo (6 errores).",
+      "tiempo": 90,
+      "material": null,
+      "seJuegaEn": "Pantalla y celular",
+      "modo": "ahorcado",
+      "banco": "C04",
+      "errores": 6
+    },
+    {
+      "id": "C05",
+      "camino": "Creativo",
+      "tipo": "Reto",
+      "nombre": "Dibujo a ciegas",
+      "instrucciones": "Los integrantes se turnan para dibujar con los ojos cerrados la cosa bíblica que ven en el celular.",
+      "comoSeGana": "Si adivinan 3 a tiempo.",
+      "tiempo": 90,
+      "material": "Hojas y marcadores",
+      "seJuegaEn": "Celular y presencial",
+      "modo": "palabra_secreta",
+      "banco": "C05",
+      "cantidad": 3
+    },
+    {
+      "id": "C06",
+      "camino": "Creativo",
+      "tipo": "Reto",
+      "nombre": "Palabras prohibidas",
+      "instrucciones": "Los integrantes se turnan para describir una palabra bíblica sin decir las 3 palabras prohibidas que ven en el celular.",
+      "comoSeGana": "Si adivinan 3 palabras sin decir ninguna prohibida.",
+      "tiempo": 90,
+      "material": null,
+      "seJuegaEn": "Celular y presencial",
+      "modo": "palabra_secreta",
+      "banco": "C06",
+      "cantidad": 3,
+      "conProhibidas": true
+    },
+    {
+      "id": "C07",
+      "camino": "Creativo",
+      "tipo": "Reto",
+      "nombre": "Una palabra a la vez",
+      "instrucciones": "Un integrante adivina. Los demás ven una palabra bíblica difícil y le dan pistas por turnos, una sola palabra cada uno. Si alguien dice una parte de la palabra secreta, esa palabra se pierde.",
+      "comoSeGana": "Si adivinan 3 palabras en 60 segundos.",
+      "tiempo": 60,
+      "material": null,
+      "seJuegaEn": "Celular y presencial",
+      "modo": "palabra_secreta",
+      "banco": "C07",
+      "cantidad": 3
+    },
+    {
+      "id": "C08",
+      "camino": "Creativo",
+      "tipo": "Reto",
+      "nombre": "Teléfono dibujado",
+      "instrucciones": "El primer integrante ve una escena bíblica en el celular y la dibuja en 15 segundos. El siguiente solo ve el dibujo y escribe qué cree que es. El siguiente dibuja lo que leyó, y así se alternan hasta el último, que dice qué es.",
+      "comoSeGana": "Si la respuesta final es la escena original (decide el moderador).",
+      "tiempo": 120,
+      "material": "Hojas y marcadores",
+      "seJuegaEn": "Celular y presencial",
+      "modo": "palabra_secreta",
+      "banco": "C08",
+      "cantidad": 1
+    },
+    {
+      "id": "C09",
+      "camino": "Creativo",
+      "tipo": "Duelo",
+      "nombre": "Dibujo cruzado",
+      "instrucciones": "Cada equipo escoge un adivinador; el resto son dibujantes. El programa muestra la misma palabra bíblica a los dibujantes de ambos equipos (el adivinador no la ve). Cada equipo dibuja en su hoja o mitad del tablero, y cada 10 segundos suena una señal y el marcador pasa al siguiente dibujante. El adivinador mira el dibujo mientras se arma y escribe sus respuestas en el celular en cualquier momento.",
+      "comoSeGana": "El primer equipo que escriba la palabra correcta (lo valida el programa).",
+      "tiempo": 60,
+      "material": "Hojas o tablero y marcadores",
+      "seJuegaEn": "Celular y presencial",
+      "modo": "palabra_secreta",
+      "banco": "C02",
+      "cantidad": 1,
+      "ambosEquipos": true,
+      "adivinadorEscribe": true
+    },
+    {
+      "id": "C10",
+      "camino": "Creativo",
+      "tipo": "Duelo",
+      "nombre": "Palabra encadenada bíblica",
+      "instrucciones": "Los equipos se turnan para decir una palabra bíblica que empiece con la última letra de la anterior (ej.: Moisés, Sara, Abraham). Cada vez responde un integrante distinto y tiene 5 segundos. No se vale repetir palabras.",
+      "comoSeGana": "Pierde el equipo que se quede sin respuesta, repita o se pase del tiempo.",
+      "tiempo": 90,
+      "material": null,
+      "seJuegaEn": "Presencial",
+      "modo": "presencial"
+    },
+    {
+      "id": "C11",
+      "camino": "Creativo",
+      "tipo": "Duelo",
+      "nombre": "Prohibidas cruzado",
+      "instrucciones": "Ambos equipos reciben la misma palabra bíblica con 3 palabras prohibidas. Cada equipo tiene un adivinador. Los equipos se alternan: en cada turno, un integrante distinto da UNA pista a su adivinador sin decir las prohibidas, y ese adivinador intenta una respuesta. Luego le toca al otro equipo.",
+      "comoSeGana": "El primer equipo cuyo adivinador acierte. Si alguien dice una prohibida, pierde su turno.",
+      "tiempo": 90,
+      "material": null,
+      "seJuegaEn": "Celular y presencial",
+      "modo": "palabra_secreta",
+      "banco": "C06",
+      "cantidad": 1,
+      "ambosEquipos": true,
+      "conProhibidas": true
+    },
+    {
+      "id": "C12",
+      "camino": "Creativo",
+      "tipo": "Duelo",
+      "nombre": "Rompecabezas bíblico",
+      "instrucciones": "Ambos equipos reciben en el celular la misma imagen de una escena bíblica partida en 9 piezas desordenadas. El equipo las arma en grupo deslizando las piezas.",
+      "comoSeGana": "El primer equipo en armar el rompecabezas y escribir qué escena es.",
+      "tiempo": 90,
+      "material": null,
+      "seJuegaEn": "Celular",
+      "modo": "rompecabezas",
+      "banco": "C12"
+    },
+    {
+      "id": "C13",
+      "camino": "Creativo",
+      "tipo": "Duelo",
+      "nombre": "Letras revueltas",
+      "instrucciones": "Cada equipo recibe el mismo juego de letras recortadas en papel. Arman en la mesa todas las palabras que puedan, de cualquier tipo. Como las letras no alcanzan, deben armar, anotar y desarmar para formar la siguiente. Un integrante va anotando cada palabra en una hoja.",
+      "comoSeGana": "El equipo con más palabras válidas anotadas al terminar el tiempo (revisa el moderador).",
+      "tiempo": 90,
+      "material": "2 juegos iguales de letras recortadas, hojas y marcadores",
+      "seJuegaEn": "Presencial",
+      "modo": "presencial"
+    },
+    {
+      "id": "C14",
+      "camino": "Creativo",
+      "tipo": "Reto final",
+      "nombre": "Ahorcado de versículo",
+      "instrucciones": "En pantalla aparece el muñeco de palo y las casillas de un versículo corto. Los integrantes se turnan para elegir letras en el celular. Cada letra equivocada dibuja una parte del muñeco. En cualquier momento pueden intentar decir el versículo completo.",
+      "comoSeGana": "Si completan el versículo antes de 8 errores.",
+      "tiempo": 120,
+      "material": null,
+      "seJuegaEn": "Pantalla y celular",
+      "modo": "ahorcado",
+      "banco": "C14",
+      "errores": 8
+    },
+    {
+      "id": "C15",
+      "camino": "Creativo",
+      "tipo": "Reto final",
+      "nombre": "Escultura maestra",
+      "instrucciones": "Un integrante se aleja del grupo. Los demás ven una escena bíblica en el celular y la arman completa con plastilina; cada uno modela al menos una parte. Luego el que se alejó debe adivinar la escena.",
+      "comoSeGana": "Si el integrante que se alejó adivina la escena a tiempo.",
+      "tiempo": 120,
+      "material": "Plastilina",
+      "seJuegaEn": "Celular y presencial",
+      "modo": "palabra_secreta",
+      "banco": "C15",
+      "cantidad": 1
+    },
+    {
+      "id": "C16",
+      "camino": "Creativo",
+      "tipo": "Reto final",
+      "nombre": "Dibujo en la espalda",
+      "instrucciones": "El equipo se pone en fila, cada uno mirando la espalda del de adelante, con una hoja sostenida en la espalda. El último de la fila ve una palabra bíblica en el celular y la dibuja sobre la hoja en la espalda del de adelante. Ese, por lo que sintió, la dibuja en la espalda del siguiente, y así hasta el primero de la fila, que la dibuja en una hoja frente a él y dice qué es.",
+      "comoSeGana": "Si el primero de la fila adivina la palabra.",
+      "tiempo": 120,
+      "material": "Hojas, cinta y marcadores",
+      "seJuegaEn": "Celular y presencial",
+      "modo": "palabra_secreta",
+      "banco": "C16",
+      "cantidad": 1
+    },
+    {
+      "id": "MU01",
+      "camino": "Música",
+      "tipo": "Reto",
+      "nombre": "Tararea y adivina",
+      "instrucciones": "Los integrantes se turnan: a cada uno le aparece en el celular una canción de la playlist PV canciones y la tararea sin decir la letra, mientras los demás adivinan.",
+      "comoSeGana": "Si adivinan 3 canciones a tiempo.",
+      "tiempo": 60,
+      "material": "Playlist PV canciones",
+      "seJuegaEn": "Celular y presencial",
+      "modo": "palabra_secreta",
+      "banco": "canciones",
+      "cantidad": 3,
+      "requiereCanciones": true
+    },
+    {
+      "id": "MU02",
+      "camino": "Música",
+      "tipo": "Reto",
+      "nombre": "Sigue la canción",
+      "instrucciones": "El moderador pone una canción de la playlist PV canciones en Apple Music, en un punto al azar, y la pausa. El equipo debe seguir cantándola desde donde quedó.",
+      "comoSeGana": "Si cantan bien la siguiente frase (decide el moderador).",
+      "tiempo": 30,
+      "material": "Parlante, playlist PV canciones",
+      "seJuegaEn": "Presencial",
+      "modo": "presencial"
+    },
+    {
+      "id": "MU03",
+      "camino": "Música",
+      "tipo": "Reto",
+      "nombre": "Silla musical (especial)",
+      "instrucciones": "Reto especial para todos los equipos. Cada equipo elige 2 participantes. Se ponen sillas en círculo, una menos que participantes. El moderador pone una canción de la playlist PV canciones y, cuando la pausa, todos buscan silla; el que queda de pie sale y se quita una silla. Se repite hasta que quede uno.",
+      "comoSeGana": "Gana el equipo del último participante que quede sentado, sea cual sea, y ese equipo recibe una carta de bonus al azar. Es la única carta que da bonus por ganar. Como es un reto especial, nadie retrocede: si el equipo que cayó en la casilla no gana, se queda donde está.",
+      "tiempo": null,
+      "material": "Sillas, parlante, playlist PV canciones",
+      "seJuegaEn": "Presencial",
+      "modo": "especial"
+    },
+    {
+      "id": "MU04",
+      "camino": "Música",
+      "tipo": "Reto",
+      "nombre": "Ordena la letra",
+      "instrucciones": "En el celular aparecen desordenadas 4 frases seguidas de una canción de la playlist PV canciones. El equipo las ordena en grupo, sin cantar.",
+      "comoSeGana": "Si el orden es correcto (lo valida el programa).",
+      "tiempo": 45,
+      "material": "Playlist PV canciones",
+      "seJuegaEn": "Celular",
+      "modo": "ordenar",
+      "banco": "canciones_frases",
+      "generador": "frases",
+      "requiereCanciones": true
+    },
+    {
+      "id": "MU05",
+      "camino": "Música",
+      "tipo": "Reto",
+      "nombre": "¿Quién la canta?",
+      "instrucciones": "El moderador pone el inicio de una canción de la playlist PV canciones. El equipo elige en el celular quién la canta entre 4 artistas (ej.: Marcos Witt, Danilo Montero, Miel San Marcos, Elevation Worship). Se juegan 3 canciones.",
+      "comoSeGana": "Si aciertan 2 de 3 (lo valida el programa).",
+      "tiempo": 60,
+      "material": "Parlante, playlist PV canciones",
+      "seJuegaEn": "Celular y presencial",
+      "modo": "opcion_multiple",
+      "banco": "canciones",
+      "generador": "artista",
+      "cantidad": 3,
+      "minimo": 2,
+      "panelCancion": true,
+      "requiereCanciones": true
+    },
+    {
+      "id": "MU06",
+      "camino": "Música",
+      "tipo": "Reto",
+      "nombre": "Intro de 3 segundos",
+      "instrucciones": "El moderador pone solo los primeros 3 segundos de una canción de la playlist. El equipo debe decir el nombre de la canción. Se juegan 3 canciones.",
+      "comoSeGana": "Si adivinan 2 de 3.",
+      "tiempo": 45,
+      "material": "Parlante, playlist PV canciones",
+      "seJuegaEn": "Presencial",
+      "modo": "presencial"
+    },
+    {
+      "id": "MU07",
+      "camino": "Música",
+      "tipo": "Reto",
+      "nombre": "Relevo cantado",
+      "instrucciones": "El moderador pone una canción de la playlist y la pausa. El equipo la sigue cantando en relevo: cada integrante canta una frase, en orden, sin frenar ni repetir.",
+      "comoSeGana": "Si completan una vuelta entera sin equivocarse.",
+      "tiempo": 60,
+      "material": "Parlante, playlist PV canciones",
+      "seJuegaEn": "Presencial",
+      "modo": "presencial"
+    },
+    {
+      "id": "MU08",
+      "camino": "Música",
+      "tipo": "Duelo",
+      "nombre": "Adivina la canción",
+      "instrucciones": "Suena un fragmento corto de una canción.",
+      "comoSeGana": "El primer equipo en decir el nombre.",
+      "tiempo": 30,
+      "material": "Parlante",
+      "seJuegaEn": "Presencial",
+      "modo": "presencial"
+    },
+    {
+      "id": "MU09",
+      "camino": "Música",
+      "tipo": "Duelo",
+      "nombre": "Duelo de intros",
+      "instrucciones": "El moderador pone los primeros 3 segundos de una canción de la playlist PV canciones. Cada equipo escribe el nombre en su celular. Se juegan 3 rondas.",
+      "comoSeGana": "Gana cada ronda el primer equipo que escriba el nombre correcto. Gana el duelo el que gane 2 de 3 (lo valida el programa).",
+      "tiempo": 60,
+      "material": "Parlante, playlist PV canciones",
+      "seJuegaEn": "Celular y presencial",
+      "modo": "escribir",
+      "banco": "canciones",
+      "generador": "nombre_cancion",
+      "rondas": 3,
+      "panelCancion": true,
+      "requiereCanciones": true
+    },
+    {
+      "id": "MU10",
+      "camino": "Música",
+      "tipo": "Duelo",
+      "nombre": "Palabra cantada",
+      "instrucciones": "El moderador dice una palabra y los equipos se turnan para cantar un pedazo de canción que la tenga.",
+      "comoSeGana": "Gana el último que logre cantar una canción nueva.",
+      "tiempo": 60,
+      "material": null,
+      "seJuegaEn": "Presencial",
+      "modo": "presencial",
+      "banco": "MU10",
+      "panel": true
+    },
+    {
+      "id": "MU11",
+      "camino": "Música",
+      "tipo": "Duelo",
+      "nombre": "Emojis en duelo",
+      "instrucciones": "Ambos equipos ven en el celular los mismos emojis que representan una canción.",
+      "comoSeGana": "El primero en adivinarla.",
+      "tiempo": 30,
+      "material": null,
+      "seJuegaEn": "Celular",
+      "modo": "opcion_multiple",
+      "banco": "canciones_emojis",
+      "generador": "emojis_cancion",
+      "cantidad": 1,
+      "requiereCanciones": true
+    },
+    {
+      "id": "MU12",
+      "camino": "Música",
+      "tipo": "Duelo",
+      "nombre": "Tarareo cruzado",
+      "instrucciones": "Cada equipo tararea a coro una canción que ve en el celular, y el equipo contrario la adivina.",
+      "comoSeGana": "El equipo que adivine primero la canción del otro.",
+      "tiempo": 45,
+      "material": null,
+      "seJuegaEn": "Celular y presencial",
+      "modo": "palabra_secreta",
+      "banco": "canciones",
+      "cantidad": 1,
+      "ambosEquipos": true,
+      "distintaPorEquipo": true,
+      "requiereCanciones": true
+    },
+    {
+      "id": "MU13",
+      "camino": "Música",
+      "tipo": "Reto final",
+      "nombre": "Tarareo en ronda",
+      "instrucciones": "Cada integrante tararea una canción distinta, uno tras otro, mientras los demás adivinan.",
+      "comoSeGana": "Si adivinan todas a tiempo.",
+      "tiempo": 90,
+      "material": null,
+      "seJuegaEn": "Celular y presencial",
+      "modo": "palabra_secreta",
+      "banco": "canciones",
+      "cantidad": 6,
+      "requiereCanciones": true
+    },
+    {
+      "id": "MU14",
+      "camino": "Música",
+      "tipo": "Reto final",
+      "nombre": "Maratón de intros",
+      "instrucciones": "El moderador pone seguidos los primeros 3 segundos de 5 canciones de la playlist PV canciones. Después de cada intro, el equipo escribe en el celular el nombre de la canción. Sin cantar.",
+      "comoSeGana": "Si aciertan 3 de 5.",
+      "tiempo": 90,
+      "material": "Parlante, playlist PV canciones",
+      "seJuegaEn": "Celular y presencial",
+      "modo": "escribir",
+      "banco": "canciones",
+      "generador": "nombre_cancion",
+      "cantidad": 5,
+      "minimo": 3,
+      "panelCancion": true,
+      "requiereCanciones": true
+    },
+    {
+      "id": "MU15",
+      "camino": "Música",
+      "tipo": "Reto final",
+      "nombre": "Emojis triple",
+      "instrucciones": "Adivinen 3 canciones en emojis seguidas.",
+      "comoSeGana": "Si adivinan las 3 a tiempo.",
+      "tiempo": 90,
+      "material": null,
+      "seJuegaEn": "Celular",
+      "modo": "opcion_multiple",
+      "banco": "canciones_emojis",
+      "generador": "emojis_cancion",
+      "cantidad": 3,
+      "minimo": 3,
+      "requiereCanciones": true
+    },
+    {
+      "id": "MU16",
+      "camino": "Música",
+      "tipo": "Reto final",
+      "nombre": "Ordena el coro completo",
+      "instrucciones": "En el celular aparecen desordenadas las 8 frases del coro de una canción de la playlist PV canciones. El equipo las ordena en grupo, sin cantar.",
+      "comoSeGana": "Si las 8 frases quedan en el orden correcto (lo valida el programa).",
+      "tiempo": 90,
+      "material": "Playlist PV canciones",
+      "seJuegaEn": "Celular",
+      "modo": "ordenar",
+      "banco": "canciones_coro",
+      "generador": "coro",
+      "requiereCanciones": true
+    },
+    {
+      "id": "E01",
+      "camino": "Equipo",
+      "tipo": "Reto",
+      "nombre": "Contar sin chocar",
+      "instrucciones": "Cuenten del 1 al 15. Cada número lo dice una persona al azar. Si dos hablan a la vez, vuelven al 1.",
+      "comoSeGana": "Si llegan a 15.",
+      "tiempo": 60,
+      "material": null,
+      "seJuegaEn": "Presencial",
+      "modo": "presencial"
+    },
+    {
+      "id": "E02",
+      "camino": "Equipo",
+      "tipo": "Reto",
+      "nombre": "Pelota en lápices",
+      "instrucciones": "Cada integrante tiene un lápiz. Todo el equipo junto debe llevar una pelota de un punto A a un punto B sosteniéndola solo con los lápices, sin tocarla con las manos. Si cae, vuelven al punto A.",
+      "comoSeGana": "Si la pelota llega al punto B a tiempo.",
+      "tiempo": 90,
+      "material": "1 pelota, 1 lápiz por integrante",
+      "seJuegaEn": "Presencial",
+      "modo": "presencial"
+    },
+    {
+      "id": "E03",
+      "camino": "Equipo",
+      "tipo": "Reto",
+      "nombre": "Laberinto con lanas",
+      "instrucciones": "Un marcador tiene amarrados varios hilos de lana, uno por integrante. Cada uno agarra su lana y, sin tocar el marcador con las manos, entre todos lo mueven para trazar el camino de un laberinto impreso desde la entrada hasta la salida.",
+      "comoSeGana": "Si llegan a la salida a tiempo sin cruzar las paredes del laberinto.",
+      "tiempo": 90,
+      "material": "1 marcador con lanas amarradas, laberinto impreso",
+      "seJuegaEn": "Presencial",
+      "modo": "presencial"
+    },
+    {
+      "id": "E04",
+      "camino": "Equipo",
+      "tipo": "Reto",
+      "nombre": "Globos cohete",
+      "instrucciones": "En una mesa hay una torre de 10 vasos. Cada integrante tiene su propio globo: lo infla, apunta y lo suelta para que salga volando hacia la torre. Pueden recoger su globo y volver a inflarlo las veces que quieran.",
+      "comoSeGana": "Si tumban todos los vasos de la mesa a tiempo.",
+      "tiempo": 60,
+      "material": "1 globo por integrante, 10 vasos, 1 mesa",
+      "seJuegaEn": "Presencial",
+      "modo": "presencial"
+    },
+    {
+      "id": "E05",
+      "camino": "Equipo",
+      "tipo": "Reto",
+      "nombre": "Cadena de nombres",
+      "instrucciones": "Cada integrante dice su nombre y algo que le gusta. El siguiente repite todo lo anterior antes de decir lo suyo.",
+      "comoSeGana": "Si el último repite todos sin equivocarse. Tienen 2 intentos.",
+      "tiempo": 90,
+      "material": null,
+      "seJuegaEn": "Presencial",
+      "modo": "presencial"
+    },
+    {
+      "id": "E06",
+      "camino": "Equipo",
+      "tipo": "Reto",
+      "nombre": "Cachete con cachete",
+      "instrucciones": "El equipo se organiza en parejas. Cada pareja toma un vaso sosteniéndolo entre sus cachetes, sin usar las manos, y lo pone en la mesa para armar una pirámide de 6 vasos. Las parejas se turnan. Si el equipo es impar, alguien repite.",
+      "comoSeGana": "Si la pirámide queda armada y en pie a tiempo.",
+      "tiempo": 90,
+      "material": "6 vasos, 1 mesa",
+      "seJuegaEn": "Presencial",
+      "modo": "presencial"
+    },
+    {
+      "id": "E07",
+      "camino": "Equipo",
+      "tipo": "Duelo",
+      "nombre": "Teléfono roto",
+      "instrucciones": "El moderador ve en su vista una frase bíblica del banco de Equipo y se la dice en secreto al primer integrante de cada equipo. Cada equipo la pasa en secreto hasta el último, que la dice en voz alta.",
+      "comoSeGana": "El equipo cuya frase final se parezca más a la original.",
+      "tiempo": 60,
+      "material": null,
+      "seJuegaEn": "Presencial",
+      "modo": "presencial",
+      "banco": "E07",
+      "panel": true
+    },
+    {
+      "id": "E08",
+      "camino": "Equipo",
+      "tipo": "Duelo",
+      "nombre": "Espalda con espalda",
+      "instrucciones": "Relevo por parejas: cada pareja del equipo lleva un globo entre sus espaldas hasta una meta y vuelve. Si el equipo es impar, alguien repite.",
+      "comoSeGana": "El primer equipo en el que todas las parejas terminen.",
+      "tiempo": 90,
+      "material": "2 globos",
+      "seJuegaEn": "Presencial",
+      "modo": "presencial"
+    },
+    {
+      "id": "E09",
+      "camino": "Equipo",
+      "tipo": "Duelo",
+      "nombre": "Cruce del mar Rojo",
+      "instrucciones": "Cada equipo debe cruzar el salón pisando solo hojas de papel, con una hoja menos que integrantes. Van moviendo las hojas hacia adelante para avanzar. Si alguien pisa el piso, todo el equipo vuelve al inicio.",
+      "comoSeGana": "El primer equipo en tener a todos sus integrantes al otro lado.",
+      "tiempo": null,
+      "material": "Hojas (una menos que integrantes, por equipo)",
+      "seJuegaEn": "Presencial",
+      "modo": "presencial"
+    },
+    {
+      "id": "E10",
+      "camino": "Equipo",
+      "tipo": "Duelo",
+      "nombre": "Tubería humana",
+      "instrucciones": "Cada integrante enrolla una hoja como si fuera un canal. Cada equipo debe llevar 3 bolitas hasta una bolsa haciéndolas rodar de canal en canal. El que ya la pasó corre al final de la fila para seguir el camino. Si una bolita cae, vuelve al inicio.",
+      "comoSeGana": "El primer equipo en meter las 3 bolitas en su bolsa.",
+      "tiempo": null,
+      "material": "1 hoja por integrante, 3 bolitas y 1 bolsa por equipo",
+      "seJuegaEn": "Presencial",
+      "modo": "presencial"
+    },
+    {
+      "id": "E11",
+      "camino": "Equipo",
+      "tipo": "Duelo",
+      "nombre": "Sopa de letras en relevo",
+      "instrucciones": "Al final de un recorrido corto hay una sopa de letras bíblica impresa pegada en la pared, una igual por equipo. En relevo, cada integrante corre, busca y raya una palabra, y vuelve. Si no encuentra ninguna, se devuelve igual y sale el siguiente.",
+      "comoSeGana": "El primer equipo en rayar todas las palabras de su sopa.",
+      "tiempo": null,
+      "material": "Sopas de letras impresas (iguales, una por equipo), marcadores, cinta",
+      "seJuegaEn": "Presencial",
+      "modo": "presencial"
+    },
+    {
+      "id": "E12",
+      "camino": "Equipo",
+      "tipo": "Duelo",
+      "nombre": "Dibujo dictado",
+      "instrucciones": "Un integrante dibuja sin ver el original. Los demás ven un dibujo sencillo y se turnan para darle una instrucción cada uno, sin decir qué es.",
+      "comoSeGana": "El dibujo más parecido al original (decide el moderador).",
+      "tiempo": 90,
+      "material": "Hojas y marcadores",
+      "seJuegaEn": "Presencial",
+      "modo": "presencial",
+      "banco": "E12",
+      "panel": true
+    },
+    {
+      "id": "E13",
+      "camino": "Equipo",
+      "tipo": "Reto final",
+      "nombre": "Copia el dibujo",
+      "instrucciones": "En pantalla aparece por 10 segundos un dibujo sencillo de una escena bíblica con 6 elementos (ej.: el arca, la paloma, el arcoíris, el sol, una jirafa y un árbol). Luego desaparece y el equipo lo redibuja de memoria en una hoja; cada integrante dibuja al menos un elemento.",
+      "comoSeGana": "Si dibujan al menos 5 de los 6 elementos en el lugar correcto (decide el moderador comparando con la imagen).",
+      "tiempo": 90,
+      "material": "Hojas y marcadores",
+      "seJuegaEn": "Pantalla y presencial",
+      "modo": "secuencia_pantalla",
+      "banco": "E13",
+      "secuencia": {
+        "tipo": "escena",
+        "cantidad": 1,
+        "duracion": 10
+      }
+    },
+    {
+      "id": "E14",
+      "camino": "Equipo",
+      "tipo": "Reto final",
+      "nombre": "Mosaico de memoria",
+      "instrucciones": "En pantalla aparece por 15 segundos un mosaico de 3 x 3 con íconos bíblicos (arca, paloma, pez, corona, estrella...). Luego desaparece y el equipo lo replica en grupo en su celular, eligiendo el ícono de cada casilla.",
+      "comoSeGana": "Si al menos 8 de las 9 casillas quedan correctas (lo valida el programa).",
+      "tiempo": 60,
+      "material": null,
+      "seJuegaEn": "Pantalla y celular",
+      "modo": "mosaico",
+      "banco": "EMOJIS_EQ",
+      "verSegundos": 15,
+      "minimo": 8
+    },
+    {
+      "id": "E15",
+      "camino": "Equipo",
+      "tipo": "Reto final",
+      "nombre": "Secuencia de movimientos",
+      "instrucciones": "En pantalla aparecen una sola vez, una tras otra, 8 acciones (ej.: aplaudir, tocarse la cabeza, saltar, girar, agacharse). Luego todo el equipo debe hacerlas de memoria, en el mismo orden y al mismo tiempo.",
+      "comoSeGana": "Si hacen las 8 en el orden correcto sin que nadie se equivoque. Tienen 2 intentos.",
+      "tiempo": 60,
+      "material": null,
+      "seJuegaEn": "Pantalla y presencial",
+      "modo": "secuencia_pantalla",
+      "banco": "E15",
+      "secuencia": {
+        "tipo": "acciones",
+        "cantidad": 8,
+        "intervalo": 2.5
+      }
+    },
+    {
+      "id": "E16",
+      "camino": "Equipo",
+      "tipo": "Reto final",
+      "nombre": "Concéntrese bíblico",
+      "instrucciones": "En pantalla aparecen por 15 segundos 12 cartas con imágenes bíblicas (6 parejas). Luego se voltean y el equipo, por turnos, elige desde el celular dos cartas para encontrar las parejas. Cada integrante elige un par por turno.",
+      "comoSeGana": "Si encuentran las 6 parejas a tiempo.",
+      "tiempo": 90,
+      "material": null,
+      "seJuegaEn": "Pantalla y celular",
+      "modo": "concentrese",
+      "banco": "EMOJIS_EQ",
+      "verSegundos": 15
+    },
+    {
+      "id": "P01",
+      "camino": "Todos",
+      "tipo": "Penitencia",
+      "nombre": "Estatuas congeladas",
+      "instrucciones": "El equipo se queda congelado como estatuas hasta que el siguiente equipo termine su turno.",
+      "comoSeGana": "Cumplirla. Si se niegan, retroceden 1.",
+      "tiempo": null,
+      "material": null,
+      "seJuegaEn": "Presencial",
+      "modo": "presencial"
+    },
+    {
+      "id": "P02",
+      "camino": "Todos",
+      "tipo": "Penitencia",
+      "nombre": "Equipo mudo",
+      "instrucciones": "Hasta su siguiente turno, nadie del equipo puede hablar: solo se comunican con señas. Los demás equipos vigilan.",
+      "comoSeGana": "Cumplirla. Si alguien habla, retroceden 1.",
+      "tiempo": null,
+      "material": null,
+      "seJuegaEn": "Presencial",
+      "modo": "presencial"
+    },
+    {
+      "id": "P03",
+      "camino": "Todos",
+      "tipo": "Penitencia",
+      "nombre": "Coro a pedido",
+      "instrucciones": "Los demás equipos eligen una canción y el equipo canta el coro.",
+      "comoSeGana": "Cumplirla. Si se niegan, retroceden 1.",
+      "tiempo": 30,
+      "material": null,
+      "seJuegaEn": "Presencial",
+      "modo": "presencial"
+    },
+    {
+      "id": "P04",
+      "camino": "Todos",
+      "tipo": "Penitencia",
+      "nombre": "Dado roto",
+      "instrucciones": "En su próximo turno, el dado solo puede dar 1.",
+      "comoSeGana": "Automático.",
+      "tiempo": null,
+      "material": null,
+      "seJuegaEn": "Pantalla",
+      "modo": "automatica",
+      "efecto": "dado_uno"
+    },
+    {
+      "id": "P05",
+      "camino": "Todos",
+      "tipo": "Penitencia",
+      "nombre": "Sentadillas",
+      "instrucciones": "Todo el equipo hace 10 sentadillas contando en voz alta.",
+      "comoSeGana": "Cumplirla. Si se niegan, retroceden 1.",
+      "tiempo": 30,
+      "material": null,
+      "seJuegaEn": "Presencial",
+      "modo": "presencial"
+    },
+    {
+      "id": "P06",
+      "camino": "Todos",
+      "tipo": "Penitencia",
+      "nombre": "Media fuerza",
+      "instrucciones": "En su próximo reto solo puede participar la mitad del equipo, y los demás equipos deciden quiénes juegan.",
+      "comoSeGana": "Automático.",
+      "tiempo": null,
+      "material": null,
+      "seJuegaEn": "Pantalla y presencial",
+      "modo": "automatica",
+      "efecto": "media_fuerza"
+    },
+    {
+      "id": "P07",
+      "camino": "Todos",
+      "tipo": "Penitencia",
+      "nombre": "Animales del arca",
+      "instrucciones": "Cada integrante imita, con sonido y movimiento, un animal del arca de Noé que le asignan los demás equipos, durante 10 segundos.",
+      "comoSeGana": "Cumplirla. Si se niegan, retroceden 1.",
+      "tiempo": 45,
+      "material": null,
+      "seJuegaEn": "Presencial",
+      "modo": "presencial"
+    },
+    {
+      "id": "P08",
+      "camino": "Todos",
+      "tipo": "Penitencia",
+      "nombre": "Reloj en contra",
+      "instrucciones": "En su próximo reto tienen 15 segundos menos.",
+      "comoSeGana": "Automático.",
+      "tiempo": null,
+      "material": null,
+      "seJuegaEn": "Pantalla",
+      "modo": "automatica",
+      "efecto": "reloj_en_contra"
+    },
+    {
+      "id": "P09",
+      "camino": "Todos",
+      "tipo": "Penitencia",
+      "nombre": "Dado ajeno",
+      "instrucciones": "En su próximo turno, un equipo elegido al azar tira el dado por ellos.",
+      "comoSeGana": "Automático.",
+      "tiempo": null,
+      "material": null,
+      "seJuegaEn": "Pantalla y celular",
+      "modo": "automatica",
+      "efecto": "dado_ajeno"
+    },
+    {
+      "id": "P10",
+      "camino": "Todos",
+      "tipo": "Penitencia",
+      "nombre": "Al final de la fila",
+      "instrucciones": "En la próxima ronda, el equipo juega de último.",
+      "comoSeGana": "Automático.",
+      "tiempo": null,
+      "material": null,
+      "seJuegaEn": "Pantalla",
+      "modo": "automatica",
+      "efecto": "al_final"
+    },
+    {
+      "id": "P11",
+      "camino": "Todos",
+      "tipo": "Penitencia",
+      "nombre": "Canción infantil con coreo",
+      "instrucciones": "Los demás equipos eligen una canción infantil cristiana. El equipo tiene 20 segundos para prepararse y luego la canta con una coreografía inventada, todos juntos.",
+      "comoSeGana": "Cumplirla. Si se niegan, retroceden 1.",
+      "tiempo": 60,
+      "material": null,
+      "seJuegaEn": "Presencial",
+      "modo": "presencial"
+    },
+    {
+      "id": "P12",
+      "camino": "Todos",
+      "tipo": "Penitencia",
+      "nombre": "Sin escudo",
+      "instrucciones": "Pierden cualquier bonus que tengan guardado. Si no tienen ninguno, retroceden 1.",
+      "comoSeGana": "Automático.",
+      "tiempo": null,
+      "material": null,
+      "seJuegaEn": "Pantalla",
+      "modo": "automatica",
+      "efecto": "sin_escudo"
+    },
+    {
+      "id": "B01",
+      "camino": "Todos",
+      "tipo": "Bonus",
+      "nombre": "Impulso",
+      "instrucciones": "Avanzan 1 casilla.",
+      "comoSeGana": "Automático.",
+      "tiempo": null,
+      "material": null,
+      "seJuegaEn": "Pantalla",
+      "modo": "automatica",
+      "efecto": "impulso"
+    },
+    {
+      "id": "B02",
+      "camino": "Todos",
+      "tipo": "Bonus",
+      "nombre": "Escudo",
+      "instrucciones": "Se salvan del próximo retroceso. Lo guardan hasta usarlo.",
+      "comoSeGana": "Automático.",
+      "tiempo": null,
+      "material": null,
+      "seJuegaEn": "Pantalla",
+      "modo": "automatica",
+      "efecto": "escudo",
+      "guardable": true
+    },
+    {
+      "id": "B03",
+      "camino": "Todos",
+      "tipo": "Bonus",
+      "nombre": "Doble dado",
+      "instrucciones": "En su próximo turno tiran dos veces y eligen el resultado.",
+      "comoSeGana": "Automático.",
+      "tiempo": null,
+      "material": null,
+      "seJuegaEn": "Celular",
+      "modo": "automatica",
+      "efecto": "doble_dado",
+      "guardable": true
+    },
+    {
+      "id": "B04",
+      "camino": "Todos",
+      "tipo": "Bonus",
+      "nombre": "Intocables",
+      "instrucciones": "Nadie puede elegirlos para un duelo en la siguiente ronda.",
+      "comoSeGana": "Automático.",
+      "tiempo": null,
+      "material": null,
+      "seJuegaEn": "Pantalla",
+      "modo": "automatica",
+      "efecto": "intocables"
+    },
+    {
+      "id": "B05",
+      "camino": "Todos",
+      "tipo": "Bonus",
+      "nombre": "Refuerzo",
+      "instrucciones": "En su próximo reto pueden pedir ayuda a una persona de otro equipo.",
+      "comoSeGana": "Automático.",
+      "tiempo": null,
+      "material": null,
+      "seJuegaEn": "Presencial",
+      "modo": "automatica",
+      "efecto": "refuerzo",
+      "guardable": true
+    },
+    {
+      "id": "S01",
+      "camino": "Todos",
+      "tipo": "Sorpresa",
+      "nombre": "Intercambio",
+      "instrucciones": "Cambian de número de casilla con el equipo que elijan. Cada uno sigue en su camino.",
+      "comoSeGana": "Automático.",
+      "tiempo": null,
+      "material": null,
+      "seJuegaEn": "Pantalla",
+      "modo": "eleccion",
+      "efecto": "intercambio"
+    },
+    {
+      "id": "S02",
+      "camino": "Todos",
+      "tipo": "Sorpresa",
+      "nombre": "Viento en contra",
+      "instrucciones": "Todos los demás equipos retroceden 1.",
+      "comoSeGana": "Automático.",
+      "tiempo": null,
+      "material": null,
+      "seJuegaEn": "Pantalla",
+      "modo": "automatica",
+      "efecto": "viento_en_contra"
+    },
+    {
+      "id": "S03",
+      "camino": "Todos",
+      "tipo": "Sorpresa",
+      "nombre": "Mala racha",
+      "instrucciones": "Retroceden 1.",
+      "comoSeGana": "Automático.",
+      "tiempo": null,
+      "material": null,
+      "seJuegaEn": "Pantalla",
+      "modo": "automatica",
+      "efecto": "mala_racha"
+    },
+    {
+      "id": "S04",
+      "camino": "Todos",
+      "tipo": "Sorpresa",
+      "nombre": "Atajo",
+      "instrucciones": "Pueden pasarse a otro camino, en el mismo número de casilla.",
+      "comoSeGana": "Automático.",
+      "tiempo": null,
+      "material": null,
+      "seJuegaEn": "Pantalla",
+      "modo": "eleccion",
+      "efecto": "atajo"
+    },
+    {
+      "id": "S05",
+      "camino": "Todos",
+      "tipo": "Sorpresa",
+      "nombre": "Ustedes deciden",
+      "instrucciones": "Eligen a dos equipos para un duelo y ustedes son los jueces.",
+      "comoSeGana": "Automático.",
+      "tiempo": null,
+      "material": null,
+      "seJuegaEn": "Presencial",
+      "modo": "eleccion",
+      "efecto": "ustedes_deciden"
+    },
+    {
+      "id": "S06",
+      "camino": "Todos",
+      "tipo": "Sorpresa",
+      "nombre": "Regalo para el rival",
+      "instrucciones": "El equipo que vaya de último avanza 1 casilla.",
+      "comoSeGana": "Automático.",
+      "tiempo": null,
+      "material": null,
+      "seJuegaEn": "Pantalla",
+      "modo": "automatica",
+      "efecto": "regalo_rival"
+    }
+  ],
+  "bancos": {
+    "M01": [
+      {
+        "contenido": "¿A qué ciudad iba Saulo (Pablo) cuando se le apareció Jesús en el camino?",
+        "opciones": [
+          "Jerusalén",
+          "Damasco",
+          "Antioquía",
+          "Roma"
+        ],
+        "respuesta": "Damasco",
+        "explicacion": null,
+        "cita": "Hechos 9:3"
+      },
+      {
+        "contenido": "¿Qué reina visitó a Salomón para probar su sabiduría?",
+        "opciones": [
+          "Reina de Sabá",
+          "Ester",
+          "Jezabel",
+          "Vasti"
+        ],
+        "respuesta": "Reina de Sabá",
+        "explicacion": null,
+        "cita": "1 Reyes 10:1"
+      },
+      {
+        "contenido": "¿Cuál fue el primer milagro de Jesús según el evangelio de Juan?",
+        "opciones": [
+          "Multiplicar los panes",
+          "Caminar sobre el agua",
+          "Convertir el agua en vino",
+          "Sanar a un ciego"
+        ],
+        "respuesta": "Convertir el agua en vino",
+        "explicacion": null,
+        "cita": "Juan 2:1-11"
+      },
+      {
+        "contenido": "¿Cuántos libros tiene el Nuevo Testamento?",
+        "opciones": [
+          "12",
+          "27",
+          "39",
+          "40"
+        ],
+        "respuesta": "27",
+        "explicacion": null,
+        "cita": null
+      },
+      {
+        "contenido": "¿En qué ciudad nació Jesús?",
+        "opciones": [
+          "Nazaret",
+          "Jerusalén",
+          "Belén",
+          "Capernaúm"
+        ],
+        "respuesta": "Belén",
+        "explicacion": null,
+        "cita": "Mateo 2:1"
+      },
+      {
+        "contenido": "¿En qué monte enfrentó Elías a los profetas de Baal?",
+        "opciones": [
+          "Sinaí",
+          "Carmelo",
+          "Sion",
+          "de los Olivos"
+        ],
+        "respuesta": "Carmelo",
+        "explicacion": null,
+        "cita": "1 Reyes 18:19-20"
+      },
+      {
+        "contenido": "¿Con cuántos hombres venció Gedeón a los madianitas?",
+        "opciones": [
+          "12",
+          "300",
+          "1.000",
+          "10.000"
+        ],
+        "respuesta": "300",
+        "explicacion": null,
+        "cita": "Jueces 7:7"
+      }
+    ],
+    "M02": [
+      {
+        "contenido": "No tuve padre ni madre, pero sí tuve esposa. ¿Quién soy?",
+        "respuesta": "Adán",
+        "cita": "Génesis 2"
+      },
+      {
+        "contenido": "Viví tres días dentro de un animal y salí vivo. ¿Quién soy?",
+        "respuesta": "Jonás",
+        "cita": "Jonás 1:17 y 2:10"
+      },
+      {
+        "contenido": "Subí al cielo en un carro de fuego sin morir. ¿Quién soy?",
+        "respuesta": "Elías",
+        "cita": "2 Reyes 2:11"
+      },
+      {
+        "contenido": "Mis hermanos me vendieron, y años después yo los salvé del hambre. ¿Quién soy?",
+        "respuesta": "José",
+        "cita": "Génesis 37 y 45"
+      },
+      {
+        "contenido": "Además de la serpiente, ¿qué animal habló en la Biblia?",
+        "respuesta": "La burra de Balaam",
+        "cita": "Números 22:28"
+      }
+    ],
+    "M03": [
+      {
+        "nombre": "Sopa 1",
+        "palabras": [
+          "ARCA",
+          "MOISES",
+          "DAVID",
+          "PEDRO",
+          "JORDAN",
+          "MANA",
+          "CRUZ",
+          "GENESIS"
+        ]
+      },
+      {
+        "nombre": "Sopa 2",
+        "palabras": [
+          "ABRAHAM",
+          "NOE",
+          "BELEN",
+          "PABLO",
+          "SALMOS",
+          "PAN",
+          "ROCA",
+          "ESTER"
+        ]
+      }
+    ],
+    "M04": [
+      {
+        "contenido": "NELASUREJ",
+        "respuesta": "JERUSALEN",
+        "aceptadas": []
+      },
+      {
+        "contenido": "TAFOREP",
+        "respuesta": "PROFETA",
+        "aceptadas": []
+      },
+      {
+        "contenido": "PICULODIS",
+        "respuesta": "DISCIPULO",
+        "aceptadas": []
+      },
+      {
+        "contenido": "MOLSAS",
+        "respuesta": "SALMOS",
+        "aceptadas": []
+      },
+      {
+        "contenido": "MOTISBAU",
+        "respuesta": "BAUTISMO",
+        "aceptadas": []
+      },
+      {
+        "contenido": "LOPARABA",
+        "respuesta": "PARABOLA",
+        "aceptadas": []
+      },
+      {
+        "contenido": "GELIOVANE",
+        "respuesta": "EVANGELIO",
+        "aceptadas": []
+      }
+    ],
+    "M05": [
+      {
+        "contenido": "Pedro era pescador antes de seguir a Jesús.",
+        "opciones": [
+          "Verdadero",
+          "Falso"
+        ],
+        "respuesta": "Verdadero",
+        "explicacion": null,
+        "cita": "Mateo 4:18"
+      },
+      {
+        "contenido": "Los Diez Mandamientos fueron escritos en tablas de madera.",
+        "opciones": [
+          "Verdadero",
+          "Falso"
+        ],
+        "respuesta": "Falso",
+        "explicacion": "fueron tablas de piedra",
+        "cita": "Éxodo 31:18"
+      },
+      {
+        "contenido": "Abraham tenía 100 años cuando nació Isaac.",
+        "opciones": [
+          "Verdadero",
+          "Falso"
+        ],
+        "respuesta": "Verdadero",
+        "explicacion": null,
+        "cita": "Génesis 21:5"
+      },
+      {
+        "contenido": "Moisés entró a la Tierra Prometida.",
+        "opciones": [
+          "Verdadero",
+          "Falso"
+        ],
+        "respuesta": "Falso",
+        "explicacion": "solo la vio desde el monte Nebo",
+        "cita": "Deuteronomio 34:1-4"
+      },
+      {
+        "contenido": "Rut era moabita.",
+        "opciones": [
+          "Verdadero",
+          "Falso"
+        ],
+        "respuesta": "Verdadero",
+        "explicacion": null,
+        "cita": "Rut 1:4"
+      },
+      {
+        "contenido": "Noé envió primero una paloma desde el arca.",
+        "opciones": [
+          "Verdadero",
+          "Falso"
+        ],
+        "respuesta": "Falso",
+        "explicacion": "primero envió un cuervo",
+        "cita": "Génesis 8:6-8"
+      },
+      {
+        "contenido": "Nehemías dirigió la reconstrucción de los muros de Jerusalén.",
+        "opciones": [
+          "Verdadero",
+          "Falso"
+        ],
+        "respuesta": "Verdadero",
+        "explicacion": null,
+        "cita": "Nehemías 2:17-18"
+      },
+      {
+        "contenido": "La mayoría de los Proverbios los escribió el rey David.",
+        "opciones": [
+          "Verdadero",
+          "Falso"
+        ],
+        "respuesta": "Falso",
+        "explicacion": "fue su hijo Salomón",
+        "cita": "Proverbios 1:1"
+      }
+    ],
+    "M07": [
+      {
+        "contenido": "Pero los que esperan a Jehová tendrán nuevas ___; levantarán alas como las ___; correrán, y no se ___; caminarán, y no se fatigarán.",
+        "bancoPalabras": [
+          "fuerzas",
+          "águilas",
+          "cansarán",
+          "alegrías",
+          "palomas",
+          "caerán"
+        ],
+        "respuestas": [
+          "fuerzas",
+          "águilas",
+          "cansarán"
+        ],
+        "cita": "Isaías 40:31"
+      },
+      {
+        "contenido": "Encomienda a Jehová tus ___, y tus ___ serán afirmados.",
+        "bancoPalabras": [
+          "obras",
+          "pensamientos",
+          "caminos",
+          "sueños"
+        ],
+        "respuestas": [
+          "obras",
+          "pensamientos"
+        ],
+        "cita": "Proverbios 16:3"
+      },
+      {
+        "contenido": "Por la ___ de Jehová no hemos sido consumidos, porque nunca decayeron sus misericordias. Nuevas son cada ___; grande es tu ___.",
+        "bancoPalabras": [
+          "misericordia",
+          "mañana",
+          "fidelidad",
+          "gracia",
+          "noche",
+          "bondad"
+        ],
+        "respuestas": [
+          "misericordia",
+          "mañana",
+          "fidelidad"
+        ],
+        "cita": "Lamentaciones 3:22-23"
+      },
+      {
+        "contenido": "Porque no nos ha dado Dios espíritu de ___, sino de ___, de ___ y de dominio propio.",
+        "bancoPalabras": [
+          "cobardía",
+          "poder",
+          "amor",
+          "tristeza",
+          "fe",
+          "paz"
+        ],
+        "respuestas": [
+          "cobardía",
+          "poder",
+          "amor"
+        ],
+        "cita": "2 Timoteo 1:7"
+      },
+      {
+        "contenido": "Oh hombre, él te ha declarado lo que es bueno, y qué pide Jehová de ti: solamente hacer ___, y amar ___, y humillarte ante tu Dios.",
+        "bancoPalabras": [
+          "justicia",
+          "misericordia",
+          "sacrificios",
+          "riquezas"
+        ],
+        "respuestas": [
+          "justicia",
+          "misericordia"
+        ],
+        "cita": "Miqueas 6:8"
+      },
+      {
+        "contenido": "Dios es nuestro ___ y fortaleza, nuestro pronto ___ en las tribulaciones.",
+        "bancoPalabras": [
+          "amparo",
+          "auxilio",
+          "escudo",
+          "consuelo"
+        ],
+        "respuestas": [
+          "amparo",
+          "auxilio"
+        ],
+        "cita": "Salmos 46:1"
+      }
+    ],
+    "M08": [
+      {
+        "pistas": [
+          "Fui pastor de las ovejas de mi suegro.",
+          "Hablé con Dios en una zarza que ardía.",
+          "Crecí en el palacio del faraón.",
+          "Abrí el mar Rojo."
+        ],
+        "respuesta": "Moisés",
+        "cita": "Éxodo 2 a 14"
+      },
+      {
+        "pistas": [
+          "Fui huérfana y me crió mi primo.",
+          "Fui elegida entre muchas jóvenes para ir al palacio.",
+          "Me convertí en reina de Persia.",
+          "Arriesgué mi vida para salvar a mi pueblo de Amán."
+        ],
+        "respuesta": "Ester",
+        "cita": "Ester 2 a 7"
+      },
+      {
+        "pistas": [
+          "Era pescador.",
+          "Mi hermano Andrés también fue discípulo.",
+          "Caminé sobre el agua por un momento.",
+          "Negué a Jesús tres veces."
+        ],
+        "respuesta": "Pedro",
+        "cita": "Mateo 4:18 y 14:29"
+      },
+      {
+        "pistas": [
+          "Era moabita.",
+          "Cuando mi esposo murió, no quise dejar sola a mi suegra.",
+          "Recogía espigas en el campo de Booz.",
+          "Fui bisabuela del rey David."
+        ],
+        "respuesta": "Rut",
+        "cita": "Rut 1 a 4"
+      },
+      {
+        "pistas": [
+          "Mi abuelo fue el hombre que más años vivió.",
+          "Tuve tres hijos: Sem, Cam y Jafet.",
+          "Construí algo enorme por orden de Dios.",
+          "Solté una paloma desde una ventana."
+        ],
+        "respuesta": "Noé",
+        "cita": "Génesis 5 a 8"
+      }
+    ],
+    "M09": [
+      {
+        "contenido": "¿Quién fue el padre de Juan el Bautista?",
+        "opciones": [
+          "Zacarías",
+          "José",
+          "Elí",
+          "Simeón"
+        ],
+        "respuesta": "Zacarías",
+        "explicacion": null,
+        "cita": "Lucas 1:13"
+      },
+      {
+        "contenido": "¿Quién fue elegido para reemplazar a Judas entre los apóstoles?",
+        "opciones": [
+          "Matías",
+          "Bernabé",
+          "Silas",
+          "Esteban"
+        ],
+        "respuesta": "Matías",
+        "explicacion": null,
+        "cita": "Hechos 1:26"
+      },
+      {
+        "contenido": "¿Qué profeta ungió a David como rey?",
+        "opciones": [
+          "Natán",
+          "Samuel",
+          "Elías",
+          "Isaías"
+        ],
+        "respuesta": "Samuel",
+        "explicacion": null,
+        "cita": "1 Samuel 16:13"
+      },
+      {
+        "contenido": "¿Qué rey mandó hacer una estatua de oro y que todos la adoraran?",
+        "opciones": [
+          "Darío",
+          "Ciro",
+          "Nabucodonosor",
+          "Belsasar"
+        ],
+        "respuesta": "Nabucodonosor",
+        "explicacion": null,
+        "cita": "Daniel 3:1-6"
+      },
+      {
+        "contenido": "¿En qué isla estaba Juan cuando recibió la revelación del Apocalipsis?",
+        "opciones": [
+          "Creta",
+          "Malta",
+          "Chipre",
+          "Patmos"
+        ],
+        "respuesta": "Patmos",
+        "explicacion": null,
+        "cita": "Apocalipsis 1:9"
+      },
+      {
+        "contenido": "¿Cómo se llamaba el suegro de Moisés?",
+        "opciones": [
+          "Labán",
+          "Jetro",
+          "Aarón",
+          "Coré"
+        ],
+        "respuesta": "Jetro",
+        "explicacion": null,
+        "cita": "Éxodo 3:1"
+      }
+    ],
+    "M10": [
+      {
+        "contenido": "🐋🙏",
+        "opciones": [
+          "Jonás y el gran pez",
+          "Noé y el arca",
+          "Pedro pescando",
+          "Moisés en el río"
+        ],
+        "respuesta": "Jonás y el gran pez",
+        "explicacion": null,
+        "cita": null
+      },
+      {
+        "contenido": "🧒🪨🆚🧌",
+        "opciones": [
+          "David y Goliat",
+          "Sansón y los filisteos",
+          "Caín y Abel",
+          "José y sus hermanos"
+        ],
+        "respuesta": "David y Goliat",
+        "explicacion": null,
+        "cita": null
+      },
+      {
+        "contenido": "🌊🚶🌊",
+        "opciones": [
+          "El cruce del mar Rojo",
+          "Jesús camina sobre el agua",
+          "El diluvio",
+          "El bautismo de Jesús"
+        ],
+        "respuesta": "El cruce del mar Rojo",
+        "explicacion": null,
+        "cita": null
+      },
+      {
+        "contenido": "🍞🍞🍞🍞🍞🐟🐟",
+        "opciones": [
+          "Multiplicación de los panes y los peces",
+          "La última cena",
+          "El maná",
+          "La pesca milagrosa"
+        ],
+        "respuesta": "Multiplicación de los panes y los peces",
+        "explicacion": null,
+        "cita": null
+      },
+      {
+        "contenido": "🦁🦁🧔🙏",
+        "opciones": [
+          "Daniel en el foso de los leones",
+          "Sansón y el león",
+          "David pastor",
+          "El buen pastor"
+        ],
+        "respuesta": "Daniel en el foso de los leones",
+        "explicacion": null,
+        "cita": null
+      },
+      {
+        "contenido": "🚢🌧️🐘🦒🌈",
+        "opciones": [
+          "Noé y el arca",
+          "Jonás y el gran pez",
+          "El cruce del mar Rojo",
+          "La torre de Babel"
+        ],
+        "respuesta": "Noé y el arca",
+        "explicacion": null,
+        "cita": null
+      },
+      {
+        "contenido": "🍎🐍👫",
+        "opciones": [
+          "Adán y Eva en el huerto",
+          "Caín y Abel",
+          "Abraham y Sara",
+          "Moisés y la serpiente de bronce"
+        ],
+        "respuesta": "Adán y Eva en el huerto",
+        "explicacion": null,
+        "cita": null
+      },
+      {
+        "contenido": "🔥🌳👞",
+        "opciones": [
+          "Moisés y la zarza ardiente",
+          "Elías y el fuego del cielo",
+          "Sadrac, Mesac y Abed-nego",
+          "El jardín del Edén"
+        ],
+        "respuesta": "Moisés y la zarza ardiente",
+        "explicacion": null,
+        "cita": null
+      }
+    ],
+    "M14": [
+      {
+        "contenido": "Eva fue creada de una costilla de Adán.",
+        "opciones": [
+          "Verdadero",
+          "Falso"
+        ],
+        "respuesta": "Verdadero",
+        "explicacion": null,
+        "cita": "Génesis 2:22"
+      },
+      {
+        "contenido": "Jonás estuvo tres días y tres noches dentro del pez.",
+        "opciones": [
+          "Verdadero",
+          "Falso"
+        ],
+        "respuesta": "Verdadero",
+        "explicacion": null,
+        "cita": "Jonás 1:17"
+      },
+      {
+        "contenido": "Salomón fue hijo de David.",
+        "opciones": [
+          "Verdadero",
+          "Falso"
+        ],
+        "respuesta": "Verdadero",
+        "explicacion": null,
+        "cita": "1 Reyes 1:30"
+      },
+      {
+        "contenido": "Juan el Bautista bautizó a Jesús en el mar de Galilea.",
+        "opciones": [
+          "Verdadero",
+          "Falso"
+        ],
+        "respuesta": "Falso",
+        "explicacion": "fue en el río Jordán",
+        "cita": "Mateo 3:13"
+      },
+      {
+        "contenido": "Los diez mandamientos fueron dados en el monte Sinaí.",
+        "opciones": [
+          "Verdadero",
+          "Falso"
+        ],
+        "respuesta": "Verdadero",
+        "explicacion": null,
+        "cita": "Éxodo 19 y 20"
+      },
+      {
+        "contenido": "Lázaro era hermano de Marta y María.",
+        "opciones": [
+          "Verdadero",
+          "Falso"
+        ],
+        "respuesta": "Verdadero",
+        "explicacion": null,
+        "cita": "Juan 11:1-2"
+      },
+      {
+        "contenido": "Pablo escribió el libro de Apocalipsis.",
+        "opciones": [
+          "Verdadero",
+          "Falso"
+        ],
+        "respuesta": "Falso",
+        "explicacion": "lo escribió Juan",
+        "cita": "Apocalipsis 1:1"
+      },
+      {
+        "contenido": "Goliat era filisteo.",
+        "opciones": [
+          "Verdadero",
+          "Falso"
+        ],
+        "respuesta": "Verdadero",
+        "explicacion": null,
+        "cita": "1 Samuel 17:4"
+      }
+    ],
+    "M15": [
+      {
+        "contenido": "¿Cómo se llamaba la esposa de Isaac?",
+        "opciones": [
+          "Raquel",
+          "Rebeca",
+          "Lea",
+          "Sara"
+        ],
+        "respuesta": "Rebeca",
+        "explicacion": null,
+        "cita": "Génesis 24:67"
+      },
+      {
+        "contenido": "¿Qué jueza de Israel juzgaba al pueblo debajo de una palmera?",
+        "opciones": [
+          "Jael",
+          "Ana",
+          "Débora",
+          "Miriam"
+        ],
+        "respuesta": "Débora",
+        "explicacion": null,
+        "cita": "Jueces 4:4-5"
+      },
+      {
+        "contenido": "¿Cómo se llamaba el ciego que Jesús sanó a la salida de Jericó?",
+        "opciones": [
+          "Bartimeo",
+          "Zaqueo",
+          "Nicodemo",
+          "Malco"
+        ],
+        "respuesta": "Bartimeo",
+        "explicacion": null,
+        "cita": "Marcos 10:46-52"
+      },
+      {
+        "contenido": "¿A qué profeta mandó Dios a la casa del alfarero para darle un mensaje?",
+        "opciones": [
+          "Isaías",
+          "Ezequiel",
+          "Oseas",
+          "Jeremías"
+        ],
+        "respuesta": "Jeremías",
+        "explicacion": null,
+        "cita": "Jeremías 18:1-6"
+      },
+      {
+        "contenido": "¿Cuál era el oficio de Lucas?",
+        "opciones": [
+          "Pescador",
+          "Médico",
+          "Carpintero",
+          "Recaudador"
+        ],
+        "respuesta": "Médico",
+        "explicacion": null,
+        "cita": "Colosenses 4:14"
+      },
+      {
+        "contenido": "¿Quién fue apedreado mientras decía que veía los cielos abiertos?",
+        "opciones": [
+          "Pablo",
+          "Santiago",
+          "Felipe",
+          "Esteban"
+        ],
+        "respuesta": "Esteban",
+        "explicacion": null,
+        "cita": "Hechos 7:55-60"
+      },
+      {
+        "contenido": "¿De qué ciudad era el apóstol Pablo?",
+        "opciones": [
+          "Antioquía",
+          "Tarso",
+          "Corinto",
+          "Éfeso"
+        ],
+        "respuesta": "Tarso",
+        "explicacion": null,
+        "cita": "Hechos 21:39"
+      }
+    ],
+    "M16": [
+      {
+        "nombre": "Set 1 (aparece desordenado)",
+        "orden": [
+          "La creación",
+          "El diluvio",
+          "El llamado de Abraham",
+          "La salida de Egipto",
+          "David es rey",
+          "El nacimiento de Jesús"
+        ]
+      },
+      {
+        "nombre": "Set 2 (aparece desordenado)",
+        "orden": [
+          "El nacimiento de Jesús",
+          "El bautismo en el Jordán",
+          "La última cena",
+          "La crucifixión",
+          "La resurrección",
+          "Pentecostés"
+        ]
+      }
+    ],
+    "M17": [
+      {
+        "nombre": "Lista 1",
+        "palabras": [
+          "ARCA",
+          "CORDERO",
+          "ZARZA",
+          "MANÁ",
+          "HONDA",
+          "TÚNICA",
+          "ESTRELLA",
+          "PALOMA"
+        ]
+      },
+      {
+        "nombre": "Lista 2",
+        "palabras": [
+          "PESCADOR",
+          "CORONA",
+          "JORDÁN",
+          "TROMPETA",
+          "PIEDRA",
+          "LÁMPARA",
+          "VIÑA",
+          "SEMILLA"
+        ]
+      }
+    ],
+    "M18": [
+      {
+        "pistas": [
+          "¿Cuántas plagas hubo en Egipto?",
+          "¿Cuántos hijos varones tuvo Jacob?",
+          "¿En cuántos días hizo Dios los cielos y la tierra?"
+        ],
+        "numeros": [
+          "10",
+          "12",
+          "6"
+        ],
+        "respuesta": "10126",
+        "cita": "Éxodo 7 a 12, Génesis 35:22, Éxodo 20:11"
+      },
+      {
+        "pistas": [
+          "¿Cuántos mandamientos recibió Moisés?",
+          "¿Cuántos panes usó Jesús para alimentar a los cinco mil?",
+          "¿Cuántas veces negó Pedro a Jesús?"
+        ],
+        "numeros": [
+          "10",
+          "5",
+          "3"
+        ],
+        "respuesta": "1053",
+        "cita": "Éxodo 20, Mateo 14:17, Lucas 22:61"
+      }
+    ],
+    "C01": [
+      {
+        "palabra": "Pescador",
+        "nota": "Profesión (Pedro, Andrés)"
+      },
+      {
+        "palabra": "Carpintero",
+        "nota": "Profesión (José)"
+      },
+      {
+        "palabra": "Pastor de ovejas",
+        "nota": "Profesión (David)"
+      },
+      {
+        "palabra": "Cobrador de impuestos",
+        "nota": "Profesión (Mateo, Zaqueo)"
+      },
+      {
+        "palabra": "Médico",
+        "nota": "Profesión (Lucas)"
+      },
+      {
+        "palabra": "Fabricante de tiendas",
+        "nota": "Profesión (Pablo)"
+      },
+      {
+        "palabra": "Sembrador",
+        "nota": "Profesión (parábola del sembrador)"
+      },
+      {
+        "palabra": "Soldado",
+        "nota": "Profesión"
+      },
+      {
+        "palabra": "Noé",
+        "nota": "Personaje"
+      },
+      {
+        "palabra": "Jonás",
+        "nota": "Personaje"
+      },
+      {
+        "palabra": "Sansón",
+        "nota": "Personaje"
+      },
+      {
+        "palabra": "Goliat",
+        "nota": "Personaje"
+      },
+      {
+        "palabra": "Zaqueo",
+        "nota": "Personaje"
+      },
+      {
+        "palabra": "Moisés",
+        "nota": "Personaje"
+      },
+      {
+        "palabra": "Daniel",
+        "nota": "Personaje"
+      }
+    ],
+    "C02": [
+      {
+        "palabra": "Arca",
+        "aceptadas": [
+          "arca",
+          "arca de Noé",
+          "barco de Noé"
+        ]
+      },
+      {
+        "palabra": "Cruz",
+        "aceptadas": [
+          "cruz",
+          "cruz de Jesús"
+        ]
+      },
+      {
+        "palabra": "Corona",
+        "aceptadas": [
+          "corona",
+          "corona de rey"
+        ]
+      },
+      {
+        "palabra": "Oveja",
+        "aceptadas": [
+          "oveja",
+          "cordero",
+          "ovejita"
+        ]
+      },
+      {
+        "palabra": "Paloma",
+        "aceptadas": [
+          "paloma",
+          "paloma de la paz"
+        ]
+      },
+      {
+        "palabra": "Estrella",
+        "aceptadas": [
+          "estrella",
+          "estrella de Belén"
+        ]
+      },
+      {
+        "palabra": "Pesebre",
+        "aceptadas": [
+          "pesebre",
+          "establo",
+          "nacimiento"
+        ]
+      },
+      {
+        "palabra": "Escalera",
+        "aceptadas": [
+          "escalera",
+          "escalera de Jacob"
+        ]
+      },
+      {
+        "palabra": "Arpa",
+        "aceptadas": [
+          "arpa",
+          "arpa de David"
+        ]
+      },
+      {
+        "palabra": "Camello",
+        "aceptadas": [
+          "camello"
+        ]
+      },
+      {
+        "palabra": "León",
+        "aceptadas": [
+          "león",
+          "leones"
+        ]
+      },
+      {
+        "palabra": "Barca",
+        "aceptadas": [
+          "barca",
+          "barco",
+          "bote"
+        ]
+      },
+      {
+        "palabra": "Cántaro",
+        "aceptadas": [
+          "cántaro",
+          "jarra",
+          "vasija"
+        ]
+      },
+      {
+        "palabra": "Lámpara",
+        "aceptadas": [
+          "lámpara",
+          "lámpara de aceite"
+        ]
+      },
+      {
+        "palabra": "Serpiente",
+        "aceptadas": [
+          "serpiente",
+          "culebra"
+        ]
+      }
+    ],
+    "C03": [
+      {
+        "palabra": "Arca"
+      },
+      {
+        "palabra": "Pez"
+      },
+      {
+        "palabra": "Corona"
+      },
+      {
+        "palabra": "Oveja"
+      },
+      {
+        "palabra": "Serpiente"
+      },
+      {
+        "palabra": "Cruz"
+      },
+      {
+        "palabra": "Pan"
+      },
+      {
+        "palabra": "Barca"
+      },
+      {
+        "palabra": "Tablas de la ley"
+      },
+      {
+        "palabra": "Torre de Babel"
+      }
+    ],
+    "C04": [
+      {
+        "palabra": "ARCA DE NOE"
+      },
+      {
+        "palabra": "TORRE DE BABEL"
+      },
+      {
+        "palabra": "ZARZA ARDIENTE"
+      },
+      {
+        "palabra": "MAR ROJO"
+      },
+      {
+        "palabra": "TABLAS DE LA LEY"
+      },
+      {
+        "palabra": "MURALLAS DE JERICO"
+      },
+      {
+        "palabra": "BUEN SAMARITANO"
+      },
+      {
+        "palabra": "HIJO PRODIGO"
+      }
+    ],
+    "C05": [
+      {
+        "palabra": "Arca"
+      },
+      {
+        "palabra": "Zarza ardiente"
+      },
+      {
+        "palabra": "Escalera de Jacob"
+      },
+      {
+        "palabra": "Torre de Babel"
+      },
+      {
+        "palabra": "Pesebre"
+      },
+      {
+        "palabra": "Estrella de Belén"
+      },
+      {
+        "palabra": "Camello"
+      },
+      {
+        "palabra": "Barca"
+      },
+      {
+        "palabra": "Corona de espinas"
+      }
+    ],
+    "C06": [
+      {
+        "palabra": "Arca",
+        "prohibidas": [
+          "Noé",
+          "barco",
+          "animales"
+        ]
+      },
+      {
+        "palabra": "Goliat",
+        "prohibidas": [
+          "gigante",
+          "David",
+          "piedra"
+        ]
+      },
+      {
+        "palabra": "Pesebre",
+        "prohibidas": [
+          "Jesús",
+          "Belén",
+          "bebé"
+        ]
+      },
+      {
+        "palabra": "Maná",
+        "prohibidas": [
+          "comida",
+          "cielo",
+          "desierto"
+        ]
+      },
+      {
+        "palabra": "Jonás",
+        "prohibidas": [
+          "pez",
+          "ballena",
+          "profeta"
+        ]
+      },
+      {
+        "palabra": "Zaqueo",
+        "prohibidas": [
+          "árbol",
+          "bajito",
+          "impuestos"
+        ]
+      },
+      {
+        "palabra": "Babel",
+        "prohibidas": [
+          "torre",
+          "idiomas",
+          "construir"
+        ]
+      },
+      {
+        "palabra": "Diluvio",
+        "prohibidas": [
+          "lluvia",
+          "agua",
+          "Noé"
+        ]
+      },
+      {
+        "palabra": "Sansón",
+        "prohibidas": [
+          "fuerte",
+          "cabello",
+          "Dalila"
+        ]
+      },
+      {
+        "palabra": "Moisés",
+        "prohibidas": [
+          "mar",
+          "faraón",
+          "mandamientos"
+        ]
+      }
+    ],
+    "C07": [
+      {
+        "palabra": "Misericordia",
+        "nota": "Palabra difícil"
+      },
+      {
+        "palabra": "Profecía",
+        "nota": "Palabra difícil"
+      },
+      {
+        "palabra": "Tabernáculo",
+        "nota": "Palabra difícil"
+      },
+      {
+        "palabra": "Redención",
+        "nota": "Palabra difícil"
+      },
+      {
+        "palabra": "Pacto",
+        "nota": "Palabra difícil"
+      },
+      {
+        "palabra": "Ayuno",
+        "nota": "Palabra difícil"
+      },
+      {
+        "palabra": "Gracia",
+        "nota": "Palabra difícil"
+      },
+      {
+        "palabra": "Resurrección",
+        "nota": "Palabra difícil"
+      },
+      {
+        "palabra": "Sacrificio",
+        "nota": "Palabra difícil"
+      },
+      {
+        "palabra": "Bendición",
+        "nota": "Palabra difícil"
+      },
+      {
+        "palabra": "Arrepentimiento",
+        "nota": "Palabra difícil"
+      },
+      {
+        "palabra": "Parábola",
+        "nota": "Palabra difícil"
+      }
+    ],
+    "C08": [
+      {
+        "palabra": "Moisés y la zarza ardiente"
+      },
+      {
+        "palabra": "La torre de Babel"
+      },
+      {
+        "palabra": "La escalera de Jacob"
+      },
+      {
+        "palabra": "Daniel en el foso de los leones"
+      },
+      {
+        "palabra": "Jonás y el gran pez"
+      },
+      {
+        "palabra": "El arca de Noé"
+      },
+      {
+        "palabra": "Sansón derribando las columnas"
+      },
+      {
+        "palabra": "La burra de Balaam"
+      }
+    ],
+    "C14": [
+      {
+        "palabra": "JESUS LLORO",
+        "cita": "Juan 11:35"
+      },
+      {
+        "palabra": "DIOS ES AMOR",
+        "cita": "1 Juan 4:8"
+      },
+      {
+        "palabra": "JEHOVA ES MI PASTOR",
+        "cita": "Salmos 23:1"
+      },
+      {
+        "palabra": "ORAD SIN CESAR",
+        "cita": "1 Tesalonicenses 5:17"
+      },
+      {
+        "palabra": "ESTAD SIEMPRE GOZOSOS",
+        "cita": "1 Tesalonicenses 5:16"
+      },
+      {
+        "palabra": "JEHOVA ES MI LUZ",
+        "cita": "Salmos 27:1"
+      }
+    ],
+    "C15": [
+      {
+        "palabra": "El arca de Noé con los animales"
+      },
+      {
+        "palabra": "David frente a Goliat"
+      },
+      {
+        "palabra": "Jonás y el gran pez"
+      },
+      {
+        "palabra": "La torre de Babel"
+      },
+      {
+        "palabra": "El pesebre"
+      },
+      {
+        "palabra": "La última cena"
+      }
+    ],
+    "C16": [
+      {
+        "palabra": "Zarza ardiente"
+      },
+      {
+        "palabra": "Arca de Noé"
+      },
+      {
+        "palabra": "Torre de Babel"
+      },
+      {
+        "palabra": "Escalera de Jacob"
+      },
+      {
+        "palabra": "Pesebre"
+      },
+      {
+        "palabra": "Tablas de la ley"
+      },
+      {
+        "palabra": "Gran pez de Jonás"
+      },
+      {
+        "palabra": "Murallas de Jericó"
+      }
+    ],
+    "MU10": [
+      {
+        "palabra": "Amor"
+      },
+      {
+        "palabra": "Gloria"
+      },
+      {
+        "palabra": "Santo"
+      },
+      {
+        "palabra": "Fuego"
+      },
+      {
+        "palabra": "Cielo"
+      },
+      {
+        "palabra": "Gracia"
+      },
+      {
+        "palabra": "Rey"
+      },
+      {
+        "palabra": "Luz"
+      },
+      {
+        "palabra": "Corazón"
+      },
+      {
+        "palabra": "Aleluya"
+      },
+      {
+        "palabra": "Espíritu"
+      },
+      {
+        "palabra": "Vida"
+      },
+      {
+        "palabra": "Fiel"
+      },
+      {
+        "palabra": "Nombre"
+      },
+      {
+        "palabra": "Cruz"
+      },
+      {
+        "palabra": "Reino"
+      },
+      {
+        "palabra": "Presencia"
+      },
+      {
+        "palabra": "Poder"
+      },
+      {
+        "palabra": "Alabanza"
+      },
+      {
+        "palabra": "Libertad"
+      }
+    ],
+    "E07": [
+      {
+        "frase": "Sadrac, Mesac y Abed-nego salieron del horno sin oler a humo.",
+        "cita": "Daniel 3:27"
+      },
+      {
+        "frase": "Matusalén vivió novecientos sesenta y nueve años.",
+        "cita": "Génesis 5:27"
+      },
+      {
+        "frase": "Nabucodonosor comió hierba como los bueyes.",
+        "cita": "Daniel 4:33"
+      },
+      {
+        "frase": "Zaqueo subió a un sicómoro para ver pasar a Jesús.",
+        "cita": "Lucas 19:4"
+      },
+      {
+        "frase": "Balaam discutió con su burra en medio del camino.",
+        "cita": "Números 22:28-30"
+      },
+      {
+        "frase": "Mefi-boset comía siempre a la mesa del rey David.",
+        "cita": "2 Samuel 9:13"
+      }
+    ],
+    "canciones": [
+      {
+        "nombre": "Mi Testimonio",
+        "artista": "Elevation Worship",
+        "emojis": "🙋🗣️📜",
+        "frases": [],
+        "coro": [],
+        "aceptadas": [
+          "My Testimony"
+        ]
+      },
+      {
+        "nombre": "Gracia Sublime Es",
+        "artista": "En Espíritu y en Verdad",
+        "emojis": "🙏🎁✨",
+        "frases": [],
+        "coro": [],
+        "aceptadas": [
+          "Gracia Sublime"
+        ]
+      },
+      {
+        "nombre": "Todo Lo Has Cambiado",
+        "artista": "Danilo Montero",
+        "emojis": "💯🔄❤️",
+        "frases": [],
+        "coro": [],
+        "aceptadas": []
+      },
+      {
+        "nombre": "Tu Nombre Es Cristo",
+        "artista": "Marcos Witt",
+        "emojis": "👉📛🟰✝️",
+        "frases": [],
+        "coro": [],
+        "aceptadas": []
+      },
+      {
+        "nombre": "El Gran Yo Soy",
+        "artista": "Paul Wilbur",
+        "emojis": "🔝🙋‍♂️👑",
+        "frases": [],
+        "coro": [],
+        "aceptadas": [
+          "Gran Yo Soy",
+          "Yo Soy"
+        ]
+      },
+      {
+        "nombre": "Mil Gracias",
+        "artista": "Miel San Marcos",
+        "emojis": "1️⃣0️⃣0️⃣0️⃣🙏",
+        "frases": [],
+        "coro": [],
+        "aceptadas": []
+      },
+      {
+        "nombre": "Quién Como el Señor",
+        "artista": "René González",
+        "emojis": "❓🟰👑",
+        "frases": [],
+        "coro": [],
+        "aceptadas": []
+      },
+      {
+        "nombre": "El Poderoso de Israel",
+        "artista": "Miel San Marcos",
+        "emojis": "💪🇮🇱👑",
+        "frases": [],
+        "coro": [],
+        "aceptadas": [
+          "Poderoso de Israel"
+        ]
+      },
+      {
+        "nombre": "Has Aumentado",
+        "artista": "Danilo Montero",
+        "emojis": "📈❤️🔥",
+        "frases": [],
+        "coro": [],
+        "aceptadas": []
+      },
+      {
+        "nombre": "Vamos a Cantar",
+        "artista": "En Espíritu y en Verdad",
+        "emojis": "🚶‍♂️➡️🎤",
+        "frases": [],
+        "coro": [],
+        "aceptadas": []
+      },
+      {
+        "nombre": "Hay Libertad",
+        "artista": "Adoración La IBI y Gracia Soberana Música",
+        "emojis": "⛓️💥🕊️",
+        "frases": [],
+        "coro": [],
+        "aceptadas": []
+      },
+      {
+        "nombre": "La Salvación del Señor",
+        "artista": "Adoración La IBI y Gracia Soberana Música",
+        "emojis": "🛟✝️👑",
+        "frases": [],
+        "coro": [],
+        "aceptadas": [
+          "Salvación del Señor"
+        ]
+      },
+      {
+        "nombre": "Glorifícate",
+        "artista": "Miel San Marcos",
+        "emojis": "✨🙌🌟",
+        "frases": [],
+        "coro": [],
+        "aceptadas": []
+      },
+      {
+        "nombre": "La Bendición",
+        "artista": "Elevation Worship",
+        "emojis": "🙏✨👨‍👩‍👧‍👦",
+        "frases": [],
+        "coro": [],
+        "aceptadas": [
+          "The Blessing",
+          "Bendición"
+        ]
+      },
+      {
+        "nombre": "Yeshua",
+        "artista": "Maverick City Música",
+        "emojis": "👑✝️🕊️",
+        "frases": [],
+        "coro": [],
+        "aceptadas": []
+      },
+      {
+        "nombre": "Quiero Conocer a Jesús",
+        "artista": "Generación 12",
+        "emojis": "🙋‍♂️🔍✝️",
+        "frases": [],
+        "coro": [],
+        "aceptadas": [
+          "Nuestro Dios"
+        ]
+      },
+      {
+        "nombre": "Tu Nombre",
+        "artista": "Miel San Marcos",
+        "emojis": "👉📛🙌",
+        "frases": [],
+        "coro": [],
+        "aceptadas": []
+      },
+      {
+        "nombre": "Dios Poderoso",
+        "artista": "Adoración La IBI y Gracia Soberana Música",
+        "emojis": "☁️👑💪",
+        "frases": [],
+        "coro": [],
+        "aceptadas": []
+      },
+      {
+        "nombre": "De los Montes",
+        "artista": "Marco Barrientos",
+        "emojis": "⛰️🏔️🗣️",
+        "frases": [],
+        "coro": [],
+        "aceptadas": []
+      },
+      {
+        "nombre": "La Bondad de Dios",
+        "artista": "Essential Worship",
+        "emojis": "😇💛☁️",
+        "frases": [],
+        "coro": [],
+        "aceptadas": [
+          "Bondad de Dios"
+        ]
+      },
+      {
+        "nombre": "Es Navidad",
+        "artista": "Marcos Witt",
+        "emojis": "🎄⭐👶",
+        "frases": [],
+        "coro": [],
+        "aceptadas": []
+      },
+      {
+        "nombre": "Santo por Siempre",
+        "artista": "Adoración La IBI",
+        "emojis": "😇♾️🙌",
+        "frases": [],
+        "coro": [],
+        "aceptadas": []
+      },
+      {
+        "nombre": "Cantamos Aleluya",
+        "artista": "En Espíritu y en Verdad",
+        "emojis": "🎶🙌🙌",
+        "frases": [],
+        "coro": [],
+        "aceptadas": []
+      },
+      {
+        "nombre": "Dios Imparable",
+        "artista": "Marcos Witt",
+        "emojis": "👑🚫🛑",
+        "frases": [],
+        "coro": [],
+        "aceptadas": []
+      },
+      {
+        "nombre": "Venga Tu Reino",
+        "artista": "Hillsong en Español",
+        "emojis": "🏰👑⬇️🌎",
+        "frases": [],
+        "coro": [],
+        "aceptadas": []
+      },
+      {
+        "nombre": "El Amor de Cristo",
+        "artista": "Adoración La IBI y Gracia Soberana Música",
+        "emojis": "❤️✝️",
+        "frases": [],
+        "coro": [],
+        "aceptadas": [
+          "Amor de Cristo"
+        ]
+      },
+      {
+        "nombre": "Tómalo",
+        "artista": "Hillsong en Español",
+        "emojis": "🤲❤️",
+        "frases": [],
+        "coro": [],
+        "aceptadas": []
+      },
+      {
+        "nombre": "Canta al Señor",
+        "artista": "Ingrid Rosario",
+        "emojis": "🎤👑",
+        "frases": [],
+        "coro": [],
+        "aceptadas": []
+      },
+      {
+        "nombre": "Tu Pueblo Dice Gracias",
+        "artista": "Jacobo Ramos",
+        "emojis": "👥👥🗣️🙏",
+        "frases": [],
+        "coro": [],
+        "aceptadas": []
+      },
+      {
+        "nombre": "Como en el Cielo",
+        "artista": "Miel San Marcos",
+        "emojis": "🌎🟰☁️",
+        "frases": [],
+        "coro": [],
+        "aceptadas": []
+      },
+      {
+        "nombre": "Socorro",
+        "artista": "Un Corazón",
+        "emojis": "🆘🙏",
+        "frases": [],
+        "coro": [],
+        "aceptadas": []
+      },
+      {
+        "nombre": "Quién Es Como Tú",
+        "artista": "Marco Barrientos",
+        "emojis": "❓🟰👉",
+        "frases": [],
+        "coro": [],
+        "aceptadas": []
+      },
+      {
+        "nombre": "Bueno Es Dios",
+        "artista": "Don Moen",
+        "emojis": "👍☁️👑",
+        "frases": [],
+        "coro": [],
+        "aceptadas": []
+      },
+      {
+        "nombre": "Castillo Fuerte",
+        "artista": "Adoración La IBI y Gracia Soberana Música",
+        "emojis": "🏰💪",
+        "frases": [
+          "Castillo fuerte es nuestro Dios",
+          "Escudo siempre fiel",
+          "Y en la prueba y tempestad",
+          "Es firme Su poder"
+        ],
+        "coro": [
+          "Confía en Dios",
+          "oh corazón",
+          "Él es fuerte",
+          "para salvar",
+          "Confía en Dios",
+          "la roca es Él",
+          "Tu refugio es",
+          "castillo fuerte"
+        ],
+        "aceptadas": []
+      },
+      {
+        "nombre": "El Dios Que Adoramos",
+        "artista": "Adoración La IBI y Gracia Soberana Música",
+        "emojis": "🙇🙌👑",
+        "frases": [],
+        "coro": [],
+        "aceptadas": [
+          "Dios que adoramos"
+        ]
+      },
+      {
+        "nombre": "Empieza en Mí",
+        "artista": "Jonathan y Sarah Jerez",
+        "emojis": "🏁➡️🙋",
+        "frases": [],
+        "coro": [],
+        "aceptadas": []
+      },
+      {
+        "nombre": "Mi Alma Esperará",
+        "artista": "Gracia Soberana Música",
+        "emojis": "🕊️⏳🙏",
+        "frases": [],
+        "coro": [],
+        "aceptadas": []
+      },
+      {
+        "nombre": "En Esto Creo",
+        "artista": "Hillsong en Español",
+        "emojis": "📜🙏✅",
+        "frases": [],
+        "coro": [],
+        "aceptadas": [
+          "El Credo"
+        ]
+      },
+      {
+        "nombre": "Gracias",
+        "artista": "Marcos Witt",
+        "emojis": "🙏💖",
+        "frases": [],
+        "coro": [],
+        "aceptadas": []
+      },
+      {
+        "nombre": "Creo en Ti",
+        "artista": "Julio Melgar",
+        "emojis": "✅👉🙏",
+        "frases": [],
+        "coro": [],
+        "aceptadas": []
+      },
+      {
+        "nombre": "Al Que Me Ciñe",
+        "artista": "Jesús Adrián Romero",
+        "emojis": "🎗️💪",
+        "frases": [],
+        "coro": [],
+        "aceptadas": []
+      },
+      {
+        "nombre": "Sobre Todo Es Rey",
+        "artista": "Gracia Soberana Música",
+        "emojis": "⬆️🌎👑",
+        "frases": [],
+        "coro": [],
+        "aceptadas": []
+      },
+      {
+        "nombre": "Glorioso Día",
+        "artista": "Essential Worship y Miel San Marcos",
+        "emojis": "✨☀️📅",
+        "frases": [],
+        "coro": [],
+        "aceptadas": []
+      }
+    ],
+    "canciones_emojis": [
+      {
+        "nombre": "Mi Testimonio",
+        "artista": "Elevation Worship",
+        "emojis": "🙋🗣️📜",
+        "frases": [],
+        "coro": [],
+        "aceptadas": [
+          "My Testimony"
+        ]
+      },
+      {
+        "nombre": "Gracia Sublime Es",
+        "artista": "En Espíritu y en Verdad",
+        "emojis": "🙏🎁✨",
+        "frases": [],
+        "coro": [],
+        "aceptadas": [
+          "Gracia Sublime"
+        ]
+      },
+      {
+        "nombre": "Todo Lo Has Cambiado",
+        "artista": "Danilo Montero",
+        "emojis": "💯🔄❤️",
+        "frases": [],
+        "coro": [],
+        "aceptadas": []
+      },
+      {
+        "nombre": "Tu Nombre Es Cristo",
+        "artista": "Marcos Witt",
+        "emojis": "👉📛🟰✝️",
+        "frases": [],
+        "coro": [],
+        "aceptadas": []
+      },
+      {
+        "nombre": "El Gran Yo Soy",
+        "artista": "Paul Wilbur",
+        "emojis": "🔝🙋‍♂️👑",
+        "frases": [],
+        "coro": [],
+        "aceptadas": [
+          "Gran Yo Soy",
+          "Yo Soy"
+        ]
+      },
+      {
+        "nombre": "Mil Gracias",
+        "artista": "Miel San Marcos",
+        "emojis": "1️⃣0️⃣0️⃣0️⃣🙏",
+        "frases": [],
+        "coro": [],
+        "aceptadas": []
+      },
+      {
+        "nombre": "Quién Como el Señor",
+        "artista": "René González",
+        "emojis": "❓🟰👑",
+        "frases": [],
+        "coro": [],
+        "aceptadas": []
+      },
+      {
+        "nombre": "El Poderoso de Israel",
+        "artista": "Miel San Marcos",
+        "emojis": "💪🇮🇱👑",
+        "frases": [],
+        "coro": [],
+        "aceptadas": [
+          "Poderoso de Israel"
+        ]
+      },
+      {
+        "nombre": "Has Aumentado",
+        "artista": "Danilo Montero",
+        "emojis": "📈❤️🔥",
+        "frases": [],
+        "coro": [],
+        "aceptadas": []
+      },
+      {
+        "nombre": "Vamos a Cantar",
+        "artista": "En Espíritu y en Verdad",
+        "emojis": "🚶‍♂️➡️🎤",
+        "frases": [],
+        "coro": [],
+        "aceptadas": []
+      },
+      {
+        "nombre": "Hay Libertad",
+        "artista": "Adoración La IBI y Gracia Soberana Música",
+        "emojis": "⛓️💥🕊️",
+        "frases": [],
+        "coro": [],
+        "aceptadas": []
+      },
+      {
+        "nombre": "La Salvación del Señor",
+        "artista": "Adoración La IBI y Gracia Soberana Música",
+        "emojis": "🛟✝️👑",
+        "frases": [],
+        "coro": [],
+        "aceptadas": [
+          "Salvación del Señor"
+        ]
+      },
+      {
+        "nombre": "Glorifícate",
+        "artista": "Miel San Marcos",
+        "emojis": "✨🙌🌟",
+        "frases": [],
+        "coro": [],
+        "aceptadas": []
+      },
+      {
+        "nombre": "La Bendición",
+        "artista": "Elevation Worship",
+        "emojis": "🙏✨👨‍👩‍👧‍👦",
+        "frases": [],
+        "coro": [],
+        "aceptadas": [
+          "The Blessing",
+          "Bendición"
+        ]
+      },
+      {
+        "nombre": "Yeshua",
+        "artista": "Maverick City Música",
+        "emojis": "👑✝️🕊️",
+        "frases": [],
+        "coro": [],
+        "aceptadas": []
+      },
+      {
+        "nombre": "Quiero Conocer a Jesús",
+        "artista": "Generación 12",
+        "emojis": "🙋‍♂️🔍✝️",
+        "frases": [],
+        "coro": [],
+        "aceptadas": [
+          "Nuestro Dios"
+        ]
+      },
+      {
+        "nombre": "Tu Nombre",
+        "artista": "Miel San Marcos",
+        "emojis": "👉📛🙌",
+        "frases": [],
+        "coro": [],
+        "aceptadas": []
+      },
+      {
+        "nombre": "Dios Poderoso",
+        "artista": "Adoración La IBI y Gracia Soberana Música",
+        "emojis": "☁️👑💪",
+        "frases": [],
+        "coro": [],
+        "aceptadas": []
+      },
+      {
+        "nombre": "De los Montes",
+        "artista": "Marco Barrientos",
+        "emojis": "⛰️🏔️🗣️",
+        "frases": [],
+        "coro": [],
+        "aceptadas": []
+      },
+      {
+        "nombre": "La Bondad de Dios",
+        "artista": "Essential Worship",
+        "emojis": "😇💛☁️",
+        "frases": [],
+        "coro": [],
+        "aceptadas": [
+          "Bondad de Dios"
+        ]
+      },
+      {
+        "nombre": "Es Navidad",
+        "artista": "Marcos Witt",
+        "emojis": "🎄⭐👶",
+        "frases": [],
+        "coro": [],
+        "aceptadas": []
+      },
+      {
+        "nombre": "Santo por Siempre",
+        "artista": "Adoración La IBI",
+        "emojis": "😇♾️🙌",
+        "frases": [],
+        "coro": [],
+        "aceptadas": []
+      },
+      {
+        "nombre": "Cantamos Aleluya",
+        "artista": "En Espíritu y en Verdad",
+        "emojis": "🎶🙌🙌",
+        "frases": [],
+        "coro": [],
+        "aceptadas": []
+      },
+      {
+        "nombre": "Dios Imparable",
+        "artista": "Marcos Witt",
+        "emojis": "👑🚫🛑",
+        "frases": [],
+        "coro": [],
+        "aceptadas": []
+      },
+      {
+        "nombre": "Venga Tu Reino",
+        "artista": "Hillsong en Español",
+        "emojis": "🏰👑⬇️🌎",
+        "frases": [],
+        "coro": [],
+        "aceptadas": []
+      },
+      {
+        "nombre": "El Amor de Cristo",
+        "artista": "Adoración La IBI y Gracia Soberana Música",
+        "emojis": "❤️✝️",
+        "frases": [],
+        "coro": [],
+        "aceptadas": [
+          "Amor de Cristo"
+        ]
+      },
+      {
+        "nombre": "Tómalo",
+        "artista": "Hillsong en Español",
+        "emojis": "🤲❤️",
+        "frases": [],
+        "coro": [],
+        "aceptadas": []
+      },
+      {
+        "nombre": "Canta al Señor",
+        "artista": "Ingrid Rosario",
+        "emojis": "🎤👑",
+        "frases": [],
+        "coro": [],
+        "aceptadas": []
+      },
+      {
+        "nombre": "Tu Pueblo Dice Gracias",
+        "artista": "Jacobo Ramos",
+        "emojis": "👥👥🗣️🙏",
+        "frases": [],
+        "coro": [],
+        "aceptadas": []
+      },
+      {
+        "nombre": "Como en el Cielo",
+        "artista": "Miel San Marcos",
+        "emojis": "🌎🟰☁️",
+        "frases": [],
+        "coro": [],
+        "aceptadas": []
+      },
+      {
+        "nombre": "Socorro",
+        "artista": "Un Corazón",
+        "emojis": "🆘🙏",
+        "frases": [],
+        "coro": [],
+        "aceptadas": []
+      },
+      {
+        "nombre": "Quién Es Como Tú",
+        "artista": "Marco Barrientos",
+        "emojis": "❓🟰👉",
+        "frases": [],
+        "coro": [],
+        "aceptadas": []
+      },
+      {
+        "nombre": "Bueno Es Dios",
+        "artista": "Don Moen",
+        "emojis": "👍☁️👑",
+        "frases": [],
+        "coro": [],
+        "aceptadas": []
+      },
+      {
+        "nombre": "Castillo Fuerte",
+        "artista": "Adoración La IBI y Gracia Soberana Música",
+        "emojis": "🏰💪",
+        "frases": [
+          "Castillo fuerte es nuestro Dios",
+          "Escudo siempre fiel",
+          "Y en la prueba y tempestad",
+          "Es firme Su poder"
+        ],
+        "coro": [
+          "Confía en Dios",
+          "oh corazón",
+          "Él es fuerte",
+          "para salvar",
+          "Confía en Dios",
+          "la roca es Él",
+          "Tu refugio es",
+          "castillo fuerte"
+        ],
+        "aceptadas": []
+      },
+      {
+        "nombre": "El Dios Que Adoramos",
+        "artista": "Adoración La IBI y Gracia Soberana Música",
+        "emojis": "🙇🙌👑",
+        "frases": [],
+        "coro": [],
+        "aceptadas": [
+          "Dios que adoramos"
+        ]
+      },
+      {
+        "nombre": "Empieza en Mí",
+        "artista": "Jonathan y Sarah Jerez",
+        "emojis": "🏁➡️🙋",
+        "frases": [],
+        "coro": [],
+        "aceptadas": []
+      },
+      {
+        "nombre": "Mi Alma Esperará",
+        "artista": "Gracia Soberana Música",
+        "emojis": "🕊️⏳🙏",
+        "frases": [],
+        "coro": [],
+        "aceptadas": []
+      },
+      {
+        "nombre": "En Esto Creo",
+        "artista": "Hillsong en Español",
+        "emojis": "📜🙏✅",
+        "frases": [],
+        "coro": [],
+        "aceptadas": [
+          "El Credo"
+        ]
+      },
+      {
+        "nombre": "Gracias",
+        "artista": "Marcos Witt",
+        "emojis": "🙏💖",
+        "frases": [],
+        "coro": [],
+        "aceptadas": []
+      },
+      {
+        "nombre": "Creo en Ti",
+        "artista": "Julio Melgar",
+        "emojis": "✅👉🙏",
+        "frases": [],
+        "coro": [],
+        "aceptadas": []
+      },
+      {
+        "nombre": "Al Que Me Ciñe",
+        "artista": "Jesús Adrián Romero",
+        "emojis": "🎗️💪",
+        "frases": [],
+        "coro": [],
+        "aceptadas": []
+      },
+      {
+        "nombre": "Sobre Todo Es Rey",
+        "artista": "Gracia Soberana Música",
+        "emojis": "⬆️🌎👑",
+        "frases": [],
+        "coro": [],
+        "aceptadas": []
+      },
+      {
+        "nombre": "Glorioso Día",
+        "artista": "Essential Worship y Miel San Marcos",
+        "emojis": "✨☀️📅",
+        "frases": [],
+        "coro": [],
+        "aceptadas": []
+      }
+    ],
+    "canciones_frases": [
+      {
+        "nombre": "Castillo Fuerte",
+        "artista": "Adoración La IBI y Gracia Soberana Música",
+        "emojis": "🏰💪",
+        "frases": [
+          "Castillo fuerte es nuestro Dios",
+          "Escudo siempre fiel",
+          "Y en la prueba y tempestad",
+          "Es firme Su poder"
+        ],
+        "coro": [
+          "Confía en Dios",
+          "oh corazón",
+          "Él es fuerte",
+          "para salvar",
+          "Confía en Dios",
+          "la roca es Él",
+          "Tu refugio es",
+          "castillo fuerte"
+        ],
+        "aceptadas": []
+      }
+    ],
+    "canciones_coro": [
+      {
+        "nombre": "Castillo Fuerte",
+        "artista": "Adoración La IBI y Gracia Soberana Música",
+        "emojis": "🏰💪",
+        "frases": [
+          "Castillo fuerte es nuestro Dios",
+          "Escudo siempre fiel",
+          "Y en la prueba y tempestad",
+          "Es firme Su poder"
+        ],
+        "coro": [
+          "Confía en Dios",
+          "oh corazón",
+          "Él es fuerte",
+          "para salvar",
+          "Confía en Dios",
+          "la roca es Él",
+          "Tu refugio es",
+          "castillo fuerte"
+        ],
+        "aceptadas": []
+      }
+    ],
+    "DE05": [
+      {
+        "letra": "A"
+      },
+      {
+        "letra": "B"
+      },
+      {
+        "letra": "C"
+      },
+      {
+        "letra": "D"
+      },
+      {
+        "letra": "E"
+      },
+      {
+        "letra": "L"
+      },
+      {
+        "letra": "M"
+      },
+      {
+        "letra": "P"
+      },
+      {
+        "letra": "R"
+      },
+      {
+        "letra": "S"
+      },
+      {
+        "letra": "T"
+      },
+      {
+        "letra": "V"
+      }
+    ],
+    "DE14": [
+      {
+        "imagen": "img/poses/pose1.jpg",
+        "texto": "Pose 1"
+      },
+      {
+        "imagen": "img/poses/pose2.jpg",
+        "texto": "Pose 2"
+      },
+      {
+        "imagen": "img/poses/pose3.jpg",
+        "texto": "Pose 3"
+      },
+      {
+        "imagen": "img/poses/pose4.jpg",
+        "texto": "Pose 4"
+      },
+      {
+        "imagen": "img/poses/pose5.jpg",
+        "texto": "Pose 5"
+      },
+      {
+        "imagen": "img/poses/pose6.jpg",
+        "texto": "Pose 6"
+      },
+      {
+        "imagen": "img/poses/pose7.jpg",
+        "texto": "Pose 7"
+      }
+    ],
+    "DE18": [
+      {
+        "texto": "Simón dice manos arriba",
+        "trampa": false
+      },
+      {
+        "texto": "Toquen el piso",
+        "trampa": true
+      },
+      {
+        "texto": "Simón dice salten",
+        "trampa": false
+      },
+      {
+        "texto": "Siéntense",
+        "trampa": true
+      },
+      {
+        "texto": "Simón dice toquen su nariz",
+        "trampa": false
+      },
+      {
+        "texto": "Aplaudan",
+        "trampa": true
+      },
+      {
+        "texto": "Simón dice den una vuelta",
+        "trampa": false
+      },
+      {
+        "texto": "Simón dice manos a la cabeza",
+        "trampa": false
+      },
+      {
+        "texto": "Levanten un pie",
+        "trampa": true
+      },
+      {
+        "texto": "Simón dice abrazo de grupo",
+        "trampa": false
+      },
+      {
+        "texto": "Agáchense",
+        "trampa": true
+      },
+      {
+        "texto": "Simón dice toquen algo azul",
+        "trampa": false
+      }
+    ],
+    "E15": [
+      {
+        "texto": "Aplaudir"
+      },
+      {
+        "texto": "Tocarse la cabeza"
+      },
+      {
+        "texto": "Saltar"
+      },
+      {
+        "texto": "Girar"
+      },
+      {
+        "texto": "Agacharse"
+      },
+      {
+        "texto": "Levantar los brazos"
+      },
+      {
+        "texto": "Tocarse los hombros"
+      },
+      {
+        "texto": "Zapatear"
+      },
+      {
+        "texto": "Chasquear los dedos"
+      },
+      {
+        "texto": "Cruzar los brazos"
+      },
+      {
+        "texto": "Tocarse las rodillas"
+      },
+      {
+        "texto": "Señalar el techo"
+      }
+    ],
+    "M06": [
+      {
+        "emoji": "🚢",
+        "nombre": "Arca"
+      },
+      {
+        "emoji": "📜",
+        "nombre": "Tablas de la ley"
+      },
+      {
+        "emoji": "🔥",
+        "nombre": "Zarza ardiente"
+      },
+      {
+        "emoji": "🐟",
+        "nombre": "Pez"
+      },
+      {
+        "emoji": "🍞",
+        "nombre": "Pan"
+      },
+      {
+        "emoji": "👑",
+        "nombre": "Corona"
+      },
+      {
+        "emoji": "🪜",
+        "nombre": "Escalera"
+      },
+      {
+        "emoji": "🕊️",
+        "nombre": "Paloma"
+      },
+      {
+        "emoji": "⭐",
+        "nombre": "Estrella"
+      },
+      {
+        "emoji": "🐑",
+        "nombre": "Oveja"
+      },
+      {
+        "emoji": "🦁",
+        "nombre": "León"
+      },
+      {
+        "emoji": "🐍",
+        "nombre": "Serpiente"
+      }
+    ],
+    "E13": [
+      {
+        "emojis": [
+          "🚢",
+          "🕊️",
+          "🌈",
+          "☀️",
+          "🦒",
+          "🌳"
+        ]
+      },
+      {
+        "emojis": [
+          "🧒",
+          "🪨",
+          "🧔",
+          "⛰️",
+          "🐑",
+          "☁️"
+        ]
+      },
+      {
+        "emojis": [
+          "🐋",
+          "🧔",
+          "🌊",
+          "⛵",
+          "🌙",
+          "⭐"
+        ]
+      }
+    ],
+    "EMOJIS_EQ": [
+      {
+        "emoji": "🚢"
+      },
+      {
+        "emoji": "🕊️"
+      },
+      {
+        "emoji": "🐟"
+      },
+      {
+        "emoji": "👑"
+      },
+      {
+        "emoji": "⭐"
+      },
+      {
+        "emoji": "🐑"
+      },
+      {
+        "emoji": "🍞"
+      },
+      {
+        "emoji": "🔥"
+      },
+      {
+        "emoji": "🦁"
+      },
+      {
+        "emoji": "🐍"
+      },
+      {
+        "emoji": "🌈"
+      },
+      {
+        "emoji": "📜"
+      }
+    ],
+    "M13": [
+      {
+        "emoji": "🇬🇷",
+        "pais": "Grecia"
+      },
+      {
+        "emoji": "🇸🇪",
+        "pais": "Suecia"
+      },
+      {
+        "emoji": "🇳🇴",
+        "pais": "Noruega"
+      },
+      {
+        "emoji": "🇯🇲",
+        "pais": "Jamaica"
+      },
+      {
+        "emoji": "🇿🇦",
+        "pais": "Sudáfrica"
+      },
+      {
+        "emoji": "🇵🇦",
+        "pais": "Panamá"
+      },
+      {
+        "emoji": "🇨🇺",
+        "pais": "Cuba"
+      },
+      {
+        "emoji": "🇹🇷",
+        "pais": "Turquía"
+      },
+      {
+        "emoji": "🇮🇪",
+        "pais": "Irlanda"
+      },
+      {
+        "emoji": "🇺🇦",
+        "pais": "Ucrania"
+      },
+      {
+        "emoji": "🇻🇳",
+        "pais": "Vietnam"
+      },
+      {
+        "emoji": "🇳🇬",
+        "pais": "Nigeria"
+      }
+    ],
+    "M12": [
+      {
+        "categoria": "Libros del Antiguo Testamento"
+      },
+      {
+        "categoria": "Los 12 apóstoles"
+      },
+      {
+        "categoria": "Mujeres de la Biblia"
+      },
+      {
+        "categoria": "Animales que aparecen en la Biblia"
+      },
+      {
+        "categoria": "Ciudades bíblicas"
+      },
+      {
+        "categoria": "Profetas"
+      },
+      {
+        "categoria": "Reyes de Israel"
+      }
+    ],
+    "DE01": [
+      {
+        "imagen": "img/casa-cartas.svg",
+        "texto": "Casa de cartas de 3 pisos"
+      }
+    ],
+    "E12": [
+      {
+        "imagen": "img/dibujo-casa.svg",
+        "texto": "Casa"
+      },
+      {
+        "imagen": "img/dibujo-arbol-sol.svg",
+        "texto": "Árbol con sol"
+      },
+      {
+        "imagen": "img/dibujo-barco.svg",
+        "texto": "Barco"
+      },
+      {
+        "imagen": "img/dibujo-cara.svg",
+        "texto": "Cara feliz"
+      }
+    ],
+    "C12": [
+      {
+        "imagen": "img/escena-arca.svg",
+        "palabra": "El arca de Noé",
+        "aceptadas": [
+          "arca",
+          "arca de noe",
+          "noe",
+          "noe y el arca"
+        ]
+      },
+      {
+        "imagen": "img/escena-david-goliat.svg",
+        "palabra": "David y Goliat",
+        "aceptadas": [
+          "david",
+          "goliat",
+          "david contra goliat"
+        ]
+      },
+      {
+        "imagen": "img/escena-jonas.svg",
+        "palabra": "Jonás y el gran pez",
+        "aceptadas": [
+          "jonas",
+          "jonas y el pez",
+          "jonas y la ballena"
+        ]
+      }
+    ]
+  },
+  "origenBancos": {
+    "M01": "excel",
+    "M02": "excel",
+    "M03": "excel",
+    "M04": "excel",
+    "M05": "excel",
+    "M07": "excel",
+    "M08": "excel",
+    "M09": "excel",
+    "M10": "excel",
+    "M14": "excel",
+    "M15": "excel",
+    "M16": "excel",
+    "M17": "excel",
+    "M18": "excel",
+    "C01": "excel",
+    "C02": "excel",
+    "C03": "excel",
+    "C04": "excel",
+    "C05": "excel",
+    "C06": "excel",
+    "C07": "excel",
+    "C08": "excel",
+    "C14": "excel",
+    "C15": "excel",
+    "C16": "excel",
+    "MU10": "excel",
+    "E07": "excel",
+    "canciones": "excel",
+    "canciones_emojis": "claude",
+    "canciones_frases": "excel",
+    "canciones_coro": "excel",
+    "DE05": "plan",
+    "DE14": "fotos",
+    "DE18": "plan",
+    "E15": "plan",
+    "M06": "plan",
+    "E13": "plan",
+    "EMOJIS_EQ": "plan",
+    "M13": "plan",
+    "M12": "plan",
+    "DE01": "dibujo",
+    "E12": "dibujo",
+    "C12": "dibujo"
+  },
+  "preguntasInicio": [
+    {
+      "pregunta": "¿Quién fue el padre de Matusalén, el hombre que más años vivió?",
+      "opciones": [
+        "Lamec",
+        "Enoc",
+        "Set",
+        "Jared"
+      ],
+      "respuesta": "Enoc"
+    },
+    {
+      "pregunta": "¿Cuántos hijos tuvo Jacob, que formaron las tribus de Israel?",
+      "opciones": [
+        "7",
+        "10",
+        "12",
+        "14"
+      ],
+      "respuesta": "12"
+    },
+    {
+      "pregunta": "¿Cuál es el libro más corto del Antiguo Testamento?",
+      "opciones": [
+        "Rut",
+        "Abdías",
+        "Jonás",
+        "Nahúm"
+      ],
+      "respuesta": "Abdías"
+    }
+  ],
+  "personajes": [
+    {
+      "archivo": "p01.png",
+      "nombre": "Caballero"
+    },
+    {
+      "archivo": "p02.png",
+      "nombre": "Arquero"
+    },
+    {
+      "archivo": "p03.png",
+      "nombre": "Guerrera"
+    },
+    {
+      "archivo": "p04.png",
+      "nombre": "Clérigo"
+    },
+    {
+      "archivo": "p05.png",
+      "nombre": "Sombra"
+    },
+    {
+      "archivo": "p06.png",
+      "nombre": "Bárbara"
+    },
+    {
+      "archivo": "p07.png",
+      "nombre": "Samurái"
+    },
+    {
+      "archivo": "p08.png",
+      "nombre": "Druida"
+    },
+    {
+      "archivo": "p09.png",
+      "nombre": "Pirata"
+    },
+    {
+      "archivo": "p10.png",
+      "nombre": "Inventora"
+    }
+  ],
+  "reglas": [
+    "1. Se forman de 4 a 6 equipos, mezclando edades.",
+    "2. Cada equipo elige uno de los 5 caminos. Dos equipos pueden compartir camino.",
+    "3. Una ronda es cuando cada equipo juega su turno una vez.",
+    "4. En su turno, el equipo tira el dado (1 a 3) desde el celular y avanza.",
+    "5. Cumplen lo que diga la casilla. Reto ganado: se quedan. Reto perdido: retroceden 1.",
+    "6. Duelo: el equipo que cae en la casilla elige contra quién juega. El que pierde retrocede 1.",
+    "7. Penitencia: deben cumplirla. Si se niegan, retroceden 1.",
+    "8. Si el dado los pasa de la casilla 10, se quedan en la 10.",
+    "9. Casilla 10 (Reto final): deben ganarlo para llegar al trofeo. Si pierden, se quedan ahí y lo intentan en su siguiente turno.",
+    "10. Los retos duran máximo 60 a 90 segundos, con temporizador en pantalla.",
+    "11. Si a las 8:20 nadie ha llegado, gana el equipo más cerca del trofeo. Si hay empate, se decide con un duelo.",
+    "12. Antes de jugar, marca en Materiales lo que tienes y saca del mazo las cartas que necesiten algo que no hay.",
+    "13. Casilla vacía: descansan, no pasa nada. Cada camino tiene 2."
+  ],
+  "materiales": [
+    {
+      "material": "Globos",
+      "cantidad": "20 (sobran por si se revientan)",
+      "seUsaEn": "Destreza, Equipo"
+    },
+    {
+      "material": "Vasos plásticos",
+      "cantidad": "30",
+      "seUsaEn": "Destreza, Equipo"
+    },
+    {
+      "material": "Bolitas (tipo ping pong)",
+      "cantidad": "8",
+      "seUsaEn": "Destreza, Equipo"
+    },
+    {
+      "material": "Hojas blancas",
+      "cantidad": "20",
+      "seUsaEn": "Creativo, Equipo"
+    },
+    {
+      "material": "Marcadores",
+      "cantidad": "6",
+      "seUsaEn": "Creativo"
+    },
+    {
+      "material": "Parlante",
+      "cantidad": "1",
+      "seUsaEn": "Música"
+    },
+    {
+      "material": "Mesa",
+      "cantidad": "1",
+      "seUsaEn": "Destreza (Sopla la bolita), Equipo"
+    },
+    {
+      "material": "Videobeam y portátil",
+      "cantidad": "1",
+      "seUsaEn": "Tablero en pantalla"
+    },
+    {
+      "material": "Celulares (uno por equipo)",
+      "cantidad": "4 a 6",
+      "seUsaEn": "Dado, trivias, palabras secretas"
+    },
+    {
+      "material": "Mazo de cartas de juego",
+      "cantidad": "1",
+      "seUsaEn": "Destreza (Torre de cartas)"
+    },
+    {
+      "material": "Vaso especial (dos vasos pegados con dos huecos)",
+      "cantidad": "1",
+      "seUsaEn": "Destreza (Globos y vasos)"
+    },
+    {
+      "material": "Palito",
+      "cantidad": "1",
+      "seUsaEn": "Destreza (Globo y villano)"
+    },
+    {
+      "material": "Bolas",
+      "cantidad": "6 a 10",
+      "seUsaEn": "Destreza (Atrapa con bolsa)"
+    },
+    {
+      "material": "Bolsas",
+      "cantidad": "1 por integrante",
+      "seUsaEn": "Destreza (Atrapa con bolsa)"
+    },
+    {
+      "material": "Aro (tipo ula ula)",
+      "cantidad": "1",
+      "seUsaEn": "Destreza (Aro sin soltarse)"
+    },
+    {
+      "material": "Plastilina",
+      "cantidad": "1 paquete",
+      "seUsaEn": "Creativo (Escultores)"
+    },
+    {
+      "material": "Tablero (pizarra) y marcadores",
+      "cantidad": "1",
+      "seUsaEn": "Creativo (Dibujo en el tablero)"
+    },
+    {
+      "material": "Letras recortadas en papel",
+      "cantidad": "2 juegos iguales",
+      "seUsaEn": "Creativo (Letras revueltas)"
+    },
+    {
+      "material": "Playlist PV canciones (Apple Music)",
+      "cantidad": "1",
+      "seUsaEn": "Música"
+    },
+    {
+      "material": "Lápices",
+      "cantidad": "1 por integrante",
+      "seUsaEn": "Equipo (Pelota en lápices)"
+    },
+    {
+      "material": "Marcador con lanas amarradas (una por integrante)",
+      "cantidad": "1",
+      "seUsaEn": "Equipo (Laberinto con lanas)"
+    },
+    {
+      "material": "Laberintos impresos",
+      "cantidad": "Varios",
+      "seUsaEn": "Equipo (Laberinto con lanas)"
+    },
+    {
+      "material": "Sopas de letras impresas",
+      "cantidad": "2 iguales por partida",
+      "seUsaEn": "Equipo (Sopa de letras en relevo)"
+    }
+  ]
+}

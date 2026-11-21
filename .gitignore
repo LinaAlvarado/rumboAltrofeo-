@@ -1,0 +1,14 @@
+# Dependencias (se instalan con: npm install)
+node_modules/
+
+# Partida guardada (cambia en cada juego y tiene los códigos de los equipos)
+estado.json
+
+# Galería de fotos de las cartas (se puede volver a generar)
+vista-previa/
+
+# Archivos temporales de Excel y del sistema
+~$*
+*.log
+.DS_Store
+Thumbs.db
